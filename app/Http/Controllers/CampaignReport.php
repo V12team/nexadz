@@ -109,7 +109,7 @@ AND gc.costs > 0 AND DATE_FORMAT(gc.date,'%Y-%m-%d') BETWEEN DATE_SUB(DATE_FORMA
 
 UNION ALL
 
-# SQL Query for Facebook
+# SQL Query for Facebook t
 SELECT fg.date, year(DATE_FORMAT(fg.date,'%Y-%m-%d')) AS year, adsacc.customer_id AS customers, fg.spend AS amount 
 FROM ads_accounts adsacc
 
