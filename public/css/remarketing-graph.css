@@ -1,0 +1,562 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+.Table-Graphic{width:100%;padding:8px 0 8px 0;}
+.Cell-Table-Graphic-Left{}
+.Cell-Table-Graphic-Right{padding-left:20px;}
+
+#Graph-content-area {
+	border: 1px solid #999;
+	background-color: #FFF;
+	width: 720px;
+	height: auto;
+	margin-left: 16px;
+	padding: 10px 10px 10px 10px;
+	clear: both;
+}
+
+.metric-imp{
+	margin: 2px 2px 0px 50px;
+	background-color: #666;
+	height:14px;
+	width:14px;
+	display:inline-block;
+    text-decoration: none;
+}
+
+.dropD{
+	display:inline-block;
+   width: 40px;
+   padding: 2px;
+   font-size: 12px;
+   line-height: 1;
+   border-radius: 2px;
+   border:1px solid #000;
+   height: 12px;
+   background:url(../images/dropd-arrow.png) no-repeat right;
+   padding-right:5px;
+   -webkit-appearance: none;
+}
+
+
+#Campaign-Drop-Down  { 
+   width: 278px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border-radius: 3px;
+   border:1px solid #000;
+   height: 34px;
+   background:url(../images/dropd-arrow.png) no-repeat right;
+   padding-right:5px;
+   -webkit-appearance: none;}
+
+#Button-square{}
+
+
+#Button-square ul li {
+	list-style: none;
+	position: relative;
+	display:block;
+	width:80px;
+	height: 60px;
+	text-align: center;
+	color: #666;
+	font-size:11px;
+	text-transform:uppercase;
+	background-color: #DDD;
+	line-height: 16px;
+	margin: 2px 0 2px 0;
+	padding-top:20px;
+	border-radius: 3px;
+	border:1px solid #e0e0e0;
+}
+
+#Button-square ul li.selected {
+		background-color: #e02d43;
+		color:#FFF;
+}
+
+#Button-square span{font-size:16px;font-weight:bold;padding-top:10px;margin-top:20px;}
+
+
+/*----------------------Thumbs Ads------------------------------*/
+.Cell-Preview-Ad{text-align:center;}
+
+.Preview-Ad{
+	border:1px solid #000;
+	width:250px;
+	height:340px;
+	padding-top:20px;
+	background-color:#fff;
+	margin-left: auto;
+    margin-right: auto;
+	position: relative;
+}
+
+.Table-Preview-Ad-Data{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+	font-size:13px;
+	font-weight:400;
+	color:#000;
+	width:230px;
+}
+
+.Image-Preview-Ads-Retargeting{max-width:100px;max-height:45px;}
+
+.Cell-Banner-Ad-Name{font-weight:bold;}
+.Cell-Banner-Ad-SubName{border-bottom:1px solid #000;padding-bottom:4px;}
+.Cell-Ad-Data{text-align:right;}
+
+.Preview-Ad-Table-Div{
+	text-align:center;
+	width:250px;
+	height:120px;
+	background-color:#EEE;
+	position: absolute;
+    bottom: 0px;
+}
+
+/*  =============*/
+
+/*      Tab    */
+
+/*  =============*/
+
+#tab-menu-graph ul {
+	margin-top: 20px;
+	margin-left: 16px;
+
+}
+
+#tab-01-graph {
+	height: auto;
+}
+
+#tab-02-graph {
+	height: auto;
+	margin-top: 10px;
+}
+
+
+.selected {
+	top: 1px;
+	display: block !important;
+}
+
+#tab-menu-graph ul li.selected {
+	list-style: none;
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #F4F7F2;
+	line-height: 30px;
+	margin-right: 2px;
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;/*border:1px solid #e0e0e0;*/
+}
+
+#tab-menu-graph ul li {
+	list-style: none;
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #DDD;
+	line-height: 30px;
+	margin-right: 2px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;/*border:1px solid #e0e0e0;*/
+}
+
+#tab-menu-graph li a {
+	text-decoration: none;
+	color: #666;
+
+}
+
+#tab-content-graph {
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	/*border:1px solid #e0e0e0;*/
+	border-bottom-right-radius: 3px;
+	border: 1px solid #999;
+	background-color: #F4F7F2;
+	width: 720px;
+	height: auto;
+	margin-left: 16px;
+	padding: 10px 10px 10px 10px;
+	clear: both;
+}
+
+.Table-Type-Full-Graph{
+	width:720px !important;
+	}
+
+
+
+.Cell-REM-Create-List-Name{padding-left:4px;text-align:left;}
+.Cell-REM-Create-List-Size{width:20%; text-align:center;}
+.Cell-REM-Create-List-Period{width:34%; text-align:center;}
+
+/*--------------------------Campaign Table-----------------------------------*/	
+.Cell-PPC-Table-Graph-Camp-Name{height:30px;}
+.Cell-PPC-Table-Graph-Camp-Impressions{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Camp-Clicks{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Camp-CTR{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Camp-CPM{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Camp-CPC{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Camp-Budget{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Camp-Action{width:11%; text-align:center;}
+.Last-No-Cell{border-bottom:0px !important;border-right:0px !important;background-color:#F4F7F2 !important;}
+
+/*--------------------------Ads Table-----------------------------------*/
+.Cell-PPC-Table-Graph-Details-Img{height:50px;width:12%; text-align:center;border-right:0px !important;}
+.Cell-PPC-Table-Graph-Details-Check{height:50px; text-align:center;width:3%;border-right:0px !important;}
+.Cell-PPC-Table-Graph-Details-Name{height:50px;}
+.Cell-PPC-Table-Graph-Details-Impressions{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Details-Clicks{width:10%; text-align:center;}
+.Cell-PPC-Table-Graph-Details-CTR{width:10%; text-align:center;}
+
+.Cell-PPC-Table-Graph-Details-Size{width:10%; text-align:center;}
+.Cell-PPC-Table-Graph-Details-URL{width:24%;}
+.Cell-PPC-Table-Graph-Details-Status{width:11%; text-align:center;}
+
+.Cell-PPC-Table-Graph-Details-CPM{width:10%; text-align:center;}
+.Cell-PPC-Table-Graph-Details-CPC{width:10%; text-align:center;}
+.Cell-PPC-Table-Graph-Details-Cost{width:10%; text-align:center;}
+.Cell-PPC-Table-Graph-Details-Budget{width:10%; text-align:center;}
+.Cell-PPC-Table-Graph-Details-Action{width:11%; text-align:center;}
+	
+/*--------------------------Sites Table-----------------------------------*/
+.Cell-PPC-Table-Graph-Sites-Name{height:30px;}
+.Cell-PPC-Table-Graph-Sites-Impressions{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Sites-Clicks{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Sites-CTR{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Sites-CPM{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Sites-CPC{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Sites-Cost{width:11%; text-align:center;}
+.Cell-PPC-Table-Graph-Sites-Budget{width:11%; text-align:center;}
+
+
+/*--------------------------Sites Table-----------------------------------*/
+.Cell-PPC-Table-Graph-Seg-Name{height:30px;}
+.Cell-PPC-Table-Graph-Seg-Duration{width:30%; text-align:center;}
+.Cell-PPC-Table-Graph-Seg-Size{width:30%; text-align:center;}
+
+
+
+a.Link-Upload {
+	background-image: url(../images/admin/icon-upload.gif);
+	background-repeat: no-repeat;
+}
+
+a.Link-Upload:hover {
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+
+/*-------------------------------PROGRESS BAR------------------------------------------------*/
+#progressbar { 
+	list-style: none; 
+	overflow: hidden; 
+	font: 14px Helvetica, Arial, Sans-Serif;margin-left:30px;
+}
+
+#progressbar li { 
+	float: left; 
+}
+#progressbar li a {
+	color: white;
+	text-decoration: none; 
+	padding: 10px 0 10px 65px;
+	background: brown;                   /* fallback color */
+	background-color:#3B5998; 
+	position: relative; 
+	display: block;
+	float: left;
+}
+
+#progressbar li a:after { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid #3B5998;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	left: 100%;
+	z-index: 2; 
+}
+
+#progressbar li a:before { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;       
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid white;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1; 
+}
+
+
+#progressbar li:first-child a {
+	padding-left: 10px;
+}
+#progressbar li:nth-child(2) a       { background:        #3B5998; }
+#progressbar li:nth-child(2) a:after { border-left-color: #3B5998; }
+#progressbar li:nth-child(3) a       { background:        #3B5998; }
+#progressbar li:nth-child(3) a:after { border-left-color: #3B5998; }
+#progressbar li:nth-child(4) a       { background:        #3B5998; }
+#progressbar li:nth-child(4) a:after { border-left-color: #3B5998; }
+#progressbar li:nth-child(5) a       { background:        #3B5998; }
+#progressbar li:nth-child(5) a:after { border-left-color: #3B5998; }
+/**
+#progressbar li:last-child a {
+	background: transparent !important;
+	color: black;
+	pointer-events: none;
+	cursor: default;
+}**/
+
+#progressbar li a.progressbar-ads-selected{background: #4883ff;}
+#progressbar li a.progressbar-ads-selected:after{ border-left-color: #4883ff; !important; }
+
+
+#progressbar li a:hover { background: #4883ff; }
+#progressbar li a:hover:after { border-left-color: #4883ff; !important; }
+
+#progressbar li a:active { background: #4883ff; }
+#progressbar li a:active:after { border-left-color: #4883ff; !important; }
+
+/*-------------------------------PROGRESS BAR SIMPLE------------------------------------------------*/
+#progressbar-simple{list-style: none; 
+	font: 14px Helvetica, Arial, Sans-Serif;
+	margin-left:20px;
+	width:950px;
+	 color:#445F68;	
+}
+
+#progressbar-simple li{
+	float:left; padding:0 0 0 10px;text-decoration:none;}
+
+#progressbar-simple li a{text-decoration:none;}
+
+#progressbar-simple li a:visited{
+	color:#333333;}
+	
+#progressbar-simple li a.progressbar-simple-ads-selected{color:#e50000;}
+
+
+
+/*----------------------Campaign-Type------------------------------*/
+.Cell-Camp-Type{text-align:center;}
+
+.Camp-Type{
+	border:1px solid #DDD;
+	width:220px;
+	height:300px;
+	padding-top:20px;
+	background-color:#fff;
+	margin-left: auto;
+    margin-right: auto;
+	position: relative;
+}
+
+.Table-Camp-Type{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+	font-size:13px;
+	font-weight:400;
+	color:#000;
+	width:210px;
+}
+
+.Image-Preview-Ads-Retargeting{max-width:100px;max-height:45px;}
+
+.Cell-Camp-Type-Name{font-weight:bold;}
+
+.Cell-Camp-Type-Button{text-align:center !important;padding-left:auto;padding-right:auto;}
+.Camp-Type-Button{color:#FFF !important;line-height:22px !important;text-decoration:none !important;}
+
+.Cell-Camp-Type-Explanation{}
+
+.Camp-Type-Table-Div{
+	text-align:center;
+	width:220px;
+	height:90px;
+	background-color:#F3F6F2;
+	position: absolute;
+    bottom: 0px;
+}
+
+
+
+/*---------------------------RETARGETING DIV FORM--------------------------------------------------*/
+.Retargeting-Alone-Div-Field{
+	height:28px;
+	padding:8px 4px 0 4px;
+	display:inline-block;
+	border-radius:3px;
+	border:1px solid #989898;
+	background-color:#F3F6F2;
+}
+
+.Retargeting-Left-Div-Field{
+	height:28px;
+	padding:8px 4px 0 4px;
+	display:inline-block;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	border-left:1px solid #989898;
+	border-top:1px solid #989898;
+	border-bottom:1px solid #989898;
+	background-color:#F3F6F2;
+}
+
+.Retargeting-RightAlone-Div-Field{
+	height:28px;
+	padding:8px 4px 0 4px;
+	display:inline-block;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+	border:1px solid #989898;
+	background-color:#FFF;
+}
+.Retargeting-Middle-Div-Field{
+	height:28px;
+	padding:8px 4px 0 4px;
+	display:inline-block;
+	border:1px solid #989898;
+	background-color:#FFF;
+}
+
+.Retargeting-Right-Div-Field{
+	height:28px;
+	padding:8px 4px 0 4px;
+	display:inline-block;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+	border-right:1px solid #989898;
+	border-top:1px solid #989898;
+	border-bottom:1px solid #989898;
+	background-color:#F3F6F2;
+}
+
+.P-Form-Retargeting-Field{display:inline-block;}
+
+
+.Icons-Setup-Remarketing{
+    float: left;
+    width: 168px;
+    display: block;
+	height:20px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding-left: 27px;
+    padding-top: 0px;
+}
+
+.track-code-table-btn{margin:10px 0 0 30px;
+}
+
+a.bn-green-140{
+    background-image: url("../images/bn-green-140.gif");
+    background-position: center bottom;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 20px;
+    padding-top: 4px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 140px;margin-right:5px;
+	
+}
+
+a.bn-green-140:center{
+    background-position: center top;
+    color: #fff;
+    height: 22px;
+    padding-top: 2px;
+    width: 140px;
+}
+
+.Fb-600x315-img{
+	vertical-align:top;
+	display:block;
+	float:right;
+	margin-right:32px;
+	background-color:#f1ffe0;
+	width:300px;
+	height:100px;
+	text-align:center;
+	padding-top:60px;
+	font-size:16px;
+	border:1px solid #a2cd71;}
+
+
+
+.Fb-guidelines{
+	width:300px;
+	margin-left:16px;
+	}
+	
+.Fb-guidelines li{
+	padding-bottom:14px;
+	}
+	
+.create-ads-margin{
+	padding-left:38px;
+	}
+	
+.Bg-Color-Pic{
+background-color: #FFF;
+	}
+	
+.Bg-Color-Contour-Pic:hover {
+	background-color: #DDF2FE;
+}
+
+.field-Budget{
+	text-align:right;
+	}
+	
+.field-taller{height:30px;padding-left:4px;padding-right:4px;}
+.Tall-Field-Margin{margin-bottom:10px;}
+
+.Preview-FB-Ad-Headline{font-weight:bold;color:#49659F;}
+.Preview-FB-Ad-URL{color:#cccccc;}
+.Preview-FB-Ad-Description{padding-left:6px;color:#000;}
+
+
+/***********************Web Ads Upload*******************************/
+.cell-web-ad-upload{vertical-align:text-top;}
+.cell-web-ad-sizes{padding-top:20px;vertical-align: top;}
+
+.Web-Ad-Max-Size{max-width:250px;max-height:150px;}

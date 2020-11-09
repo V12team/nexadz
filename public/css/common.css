@@ -1,0 +1,973 @@
+@charset "UTF-8";
+@import url("buttons.css");
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #f3f6f2;
+	font-family: "Lucida Grande", sans-serif, arial;
+	font-size: 13px;
+}
+.Form-Container h2 {
+	background-color: #000
+}
+a {
+	color: #2D66B2;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+	color: #C00;
+}
+.Global-Clear-Float {
+	clear: both;
+}
+.Image-Thumbnail, .Image-Large {
+	border: 1px solid #999;
+	padding: 2px;
+	background: #FFF;
+	display: block;
+}
+.Image-Thumbnail:hover, .Image-Large:hover {
+	border: 1px solid #000;
+}
+ul.List-StandardBullets {
+	list-style-type: disc;
+	padding-left: 75px;
+	padding-right: 50px;
+}
+/*span {
+	float: right;
+}
+*/
+
+.Clear-Float {
+	clear: both;
+}
+.Float-Left {
+	float: left;
+}
+.Float-Right {
+	float: right;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+
+a.bn-140 {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-blue-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: right;
+	margin-left: 4px;
+}
+a.bn-140:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-blue-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: top;
+	float: right;
+}
+a.bn-140-red {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: right;
+	margin-left: 4px;
+}
+a.bn-140-red:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: top;
+	float: right;
+}
+
+
+a.bn-140-red-nofloat {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+
+}
+a.bn-140-red-nofloat:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: top;
+}
+
+
+
+a.bn-140-green {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bn-green-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: right;
+	margin-left: 4px;
+}
+a.bn-140-green:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bn-green-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: top;
+	float: right;
+}
+a.bn-140-red-left {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: right;
+}
+a.bn-140-red-left:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: top;
+}
+
+
+
+
+a.bn-100 {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-blue-100.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: right;
+	margin-left: 4px;
+}
+a.bn-100:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-blue-100.gif);
+	text-align: center;
+	display: block;
+	height: 22px;
+	width: 140px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	background-position: top;
+	float: right;
+	margin-left: 4px;
+}
+a.bn-140-orange {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 22px;
+	width: 140px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: left;
+}
+a.bn-140-orange:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 22px;
+	width: 140px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	background-position: top;
+	float: left;
+}
+a.bn-200 {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-green-180.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 180px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: left;
+	margin-right: 4px;
+}
+a.bn-200:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-green-180.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 180px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: top;
+	float: left;
+	margin-right: 4px;
+}
+a.bn-190-red-large {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-190-large.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 190px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: left;
+	margin-right: 4px;
+	margin-left: 4px;
+	font-size: 14px;
+}
+a.bn-190-red-large:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-190-large.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 190px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: top;
+	float: left;
+	margin-right: 4px;
+	font-size: 14px;
+}
+
+a.bn-306-red-xlarge {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-306-xtralarge.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 306px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: left;
+	margin-right: 4px;
+	margin-left: 4px;
+	font-size: 14px;
+}
+a.bn-306-red-xlarge:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-306-xtralarge.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 306px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: top;
+	float: left;
+	margin-right: 4px;
+	font-size: 14px;
+}
+a.bn-190-gray-large {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-gray-190-large.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 190px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: left;
+	margin-right: 4px;
+	margin-left: 4px;
+	font-size: 14px;
+}
+a.bn-190-gray-large:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-gray-190-large.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 190px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: top;
+	float: left;
+	margin-right: 4px;
+	font-size: 14px;
+}
+.Spacer-Bn-Right {
+	margin-right: 5px;
+}
+.Spacer-Bn-Left {
+	margin-left: 5px;
+}
+.Spacer-Bn-Left-2x {
+	margin-left: 10px;
+}
+.Spacer-Bn-Left-3x {
+	margin-left: 15px;
+}
+.BT-Up {
+	background-image: url(../images/admin/up.gif);
+	display: block;
+	height: 13px;
+	width: 12px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.BT-Up:hover {
+	background-position: bottom;
+}
+.BT-Down {
+	background-image: url(../images/admin/down.gif);
+	display: block;
+	height: 13px;
+	width: 12px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.BT-Down:hover {
+	background-position: bottom;
+}
+/*  Standardised buttons  */
+
+
+a.Button-Red-Large-190 {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-190-large.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 190px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: bottom;
+	font-size: 14px;
+}
+a.Button-Red-Large-190:hover {
+	background-position: top;
+}
+a.Button-Orange-Small-140 {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-orange-140.gif);
+	text-align: center;
+	display: block;
+	height: 22px;
+	width: 140px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	background-position: bottom;
+}
+a.Button-Orange-Small-140:hover {
+	text-decoration: none;
+	background-position: top;
+}
+a.Button-Orange-Small-100 {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-orange-100.gif);
+	text-align: center;
+	display: block;
+	height: 22px;
+	width: 100px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	background-position: bottom;
+}
+a.Button-Orange-Small-100:hover {
+	text-decoration: none;
+	background-position: top;
+}
+a.Button-Orange-Small-80 {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-orange-80.gif);
+	text-align: center;
+	display: block;
+	height: 22px;
+	width: 80px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	background-position: bottom;
+}
+a.Button-Orange-Small-80:hover {
+	text-decoration: none;
+	background-position: top;
+}
+a.Button-Red-Small-140 {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: top;
+	line-height: normal;
+}
+a.Button-Red-Small-140:hover {
+	text-decoration: none;
+	background-position: bottom;
+}
+/*   Standard Image buttons  */
+
+
+.Button-Image-X {
+	background-image: url(../images/admin/bt-x-remove-dual.gif);
+	background-position: bottom;
+ display:block:
+}
+.Button-Image-X:hover, .Button-Image-X:active {
+	background-position: top;
+}
+/* Image Frames */
+
+
+.Image-Frame-Default {
+	padding: 2px;
+	border: 1px solid #b8b8b8;
+}
+.Image-Frame-Default:hover {
+	padding: 2px;
+	border: 1px solid #000;
+}
+.Image-Frame-Selected {
+	border: 3px solid #91C314;
+}
+/*   UTILITY DIVs    */
+
+
+.DIV-Center {
+	margin-right: auto;
+	margin-left: auto;
+}
+.DIV-Center img {
+	margin-right: auto;
+	margin-left: auto;
+}
+.DIV-Float-Right {
+	float: right;
+}
+.DIV-Float-Left {
+	float: left;
+}
+.DIV-Margin-Left {
+	margin-left: 10px;
+}
+.Block-Center {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+.P-Center {
+	text-align: center;
+}
+.P-FormIndent {
+	padding-left: 50px;
+}
+.Div-Sales-VehicleOfInterest strong {
+	color: #000;
+	font-weight: normal;
+}
+.Div-Sales-VehicleOfInterest h4 {
+	font-size: 16px;
+	padding: 0px;
+	margin: 0px;
+	color: #000;
+}
+.Div-Sales-VehicleOfInterest p {
+	padding: 0px;
+}
+.Cell-Sales-CheckBox {
+}
+.Cell-Sales-ProspectName {
+	width: 16%;
+}
+.Cell-Sales-YMM {
+}
+.Cell-Sales-Color {
+	width: 15%;
+	text-align: center;
+}
+.Cell-Sales-VIN {
+	width: 16%;
+	text-align: center;
+}
+.Cell-Sales-Stock {
+	width: 7%;
+	text-align: center;
+}
+.Cell-Sales-Delete {
+	width: 7%;
+	text-align: center;
+}
+.Cell-Sales-CompleteSale {
+	width: 14%;
+	text-align: center;
+}
+.Cell-Sales-Documents, .Cell-Sales-Sale {
+	width: 10%;
+	text-align: center;
+}
+.Cell-SalesPrint-Checkbox {
+	width: 6%;
+	text-align: center;
+}
+.Cell-SalesPrint-DocName {
+}
+.Cell-SalesPrint-Action {
+	width: 16%;
+	text-align: center;
+}
+a.Button-Orange-Small-140 {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-orange-140.gif);
+	text-align: center;
+	display: block;
+	height: 22px;
+	width: 140px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	background-position: bottom;
+}
+a.Button-Orange-Small-140:hover {
+	text-decoration: none;
+	background-position: top;
+}
+/*  Ajouts  DIFF  */
+
+
+
+
+
+.Cell-Sales-CheckBox {
+}
+.Cell-Sales-ProspectName {
+	width: 11%;
+}
+.Cell-Sales-YMM {
+}
+.Cell-Sales-Color {
+	width: 15%;
+	text-align: center;
+}
+.Cell-Sales-VIN {
+	width: 16%;
+	text-align: center;
+}
+.Cell-Sales-Stock {
+	width: 7%;
+	text-align: center;
+}
+.Cell-Sales-Delete {
+	width: 7%;
+	text-align: center;
+}
+.Cell-Sales-CompleteSale {
+	width: 14%;
+	text-align: center;
+}
+.Cell-Sales-Documents, .Cell-Sales-Sale {
+	width: 10%;
+	text-align: center;
+}
+.Cell-SalesPrint-Checkbox {
+	width: 6%;
+	text-align: center;
+}
+.Cell-SalesPrint-DocName {
+}
+.Cell-SalesPrint-Action {
+	width: 16%;
+	text-align: center;
+}
+a.Button-Orange-Small-140 {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-orange-140.gif);
+	text-align: center;
+	display: block;
+	height: 22px;
+	width: 140px;
+	padding-top: 2px;
+	text-transform: uppercase;
+	background-position: bottom;
+}
+a.Button-Orange-Small-140:hover {
+	text-decoration: none;
+	background-position: top;
+}
+.Div-Sales-TabHelper {
+	width: 90px;
+	display: block;
+	float: left;
+}
+.Div-Sales-VehicleOfInterest {
+	float: left;
+	padding-left: 10px;
+}
+.Div-Sales-VehicleOfInterest strong {
+	color: #000;
+	font-weight: normal;
+}
+.Div-Sales-VehicleOfInterest h4 {
+	font-size: 16px;
+	padding: 0px;
+	margin: 0px;
+	color: #000;
+}
+.Div-Sales-VehicleOfInterest p {
+	padding: 0px;
+}
+.Image-Thumbnail, .Image-Large {
+	/*border: 1px solid #999;*/
+	padding: 2px;
+	background: #FFF;
+	display: block;
+}
+.Image-Thumbnail:hover, .Image-Large:hover {
+/*border: 1px solid #000;*/
+}
+.DIV-Float-Left {
+	float: left;
+}
+/*   =======================    */
+/*         Sales                */
+/*   =======================    */
+
+
+
+.Span-Sales-AmountTotal {
+	display: block;
+	width: 75px;
+	text-align: right;
+	float: left;
+}
+.Cell-Sales-FeeName {
+}
+.Cell-Sales-Amount {
+	width: 35%;
+}
+.Cell-Sales-MoveTitle {
+	width: 14%;
+	text-align: center;
+}
+.Cell-Sales-MoveArrow {
+	width: 7%;
+	text-align: center;
+}
+.Cell-Sales-Remove {
+	width: 10%;
+	text-align: center;
+}
+.Cell-Tradein-YMM {
+}
+.Cell-Tradein-VIN {
+	width: 30%;
+}
+.Cell-Tradein-ValueAllowed {
+	width: 16%;
+	text-align: center;
+	color: #000;
+	font-weight: normal;
+}
+.Cell-Tradein-Action {
+	width: 16%;
+	text-align: center;
+}
+.Cell-Tradein-ActionCol {
+	width: 8%;
+	text-align: center;
+}
+/* ====================== */
+/*     Website Setup      */
+/* ====================== */
+
+
+.Block-InvAdmin-Call2ActionRow {
+	margin: 0 0 2px 0;
+	margin-left: auto;
+}
+.Block-InvAdmin-Call2ActionRow ul {
+	display: inline;
+	list-style-type: none;
+}
+.Block-InvAdmin-Call2ActionRow li {
+	float: left;
+}
+.Cell-Call2Action-CheckBox {
+	width: 40px;
+	text-align: center
+}
+.Cell-Call2Action-Type {
+	width: 120px
+}
+.Cell-Call2Action-Text-Field {
+	width: 200px;
+}
+.Cell-Call2Action-HelpPopup {
+	width: 40px
+}
+/*  =================   */
+/*         CRM  Import             */
+/*  =================   */
+
+
+.Cell-CRM-Import-ImportData {
+	width: 60%;
+}
+.Cell-CRM-Import-V12Fields {
+}
+.Form-ImportField {
+	width: 260px;
+}
+/*   =====================    */
+/*         Wholesale          */
+/*   =====================    */
+
+
+.Cell-Wholesale-Vehicle {
+}
+.Cell-Wholesale-Mileage {
+	text-align: center;
+	width: 7%;
+}
+.Cell-Wholesale-Color {
+	width: 9%;
+}
+.Cell-Wholesale-History {
+	text-align: center;
+	width: 12%
+}
+.Cell-Wholesale-Dealership {
+	width: 14%;
+}
+.Cell-Wholesale-Distance {
+	text-align: center;
+	width: 7%;
+}
+.Cell-Wholesale-Wholesale {
+	text-align: center;
+	width: 8%;
+}
+.Cell-Wholesale-Retail {
+	text-align: center;
+	width: 8%;
+}
+.Cell-Wholesale-Track-List {
+	text-align: center;
+	width: 8%;
+}
+.Cell-Wholesale-Add2Website {
+	width: 6%;
+	text-align: center;
+}
+.Field-Wholesale-Standard {
+	width: 120px;
+}
+
+
+
+.Above-List-Controls{ margin-bottom: 1px;
+    margin-top: 6px;
+    padding: 0 17px;
+}
+
+
+.Align-Image-And-Form
+{vertical-align:text-top;}
+
+
+.small-text-field{width:100px;}
+.medium-text-field{width:200px;}
+.large-text-field{width:500px;}
+
+
+
+.Icon-Sidebar-New {
+	vertical-align:text-bottom;
+	}
+	
+.Label-Online-Ads-Free {color:#c11b00;}	
+	
+	
+	
+	
+	
+	a.bn-190-blue-large {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-blue-190-large.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 190px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: left;
+	margin-right: 4px;
+	margin-left: 4px;
+	font-size: 14px;
+}
+a.bn-190-blue-large:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-blue-190-large.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 190px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: top;
+	float: left;
+	margin-right: 4px;
+	font-size: 14px;
+}
+
+
+
+.Cell-Markup-Condition{padding-left:10px !important;}
+.Cell-Markup-Recommended{width:28%;text-align:center;}			
+.Cell-Markup-YourMarkup{width:28%;text-align:center;}
+
+
+/*  Authorization Form   */
+
+
+.auth-price-block { width: 50px; display:inline;}
+
+.auth-form-p-right-aligned {text-align:right; padding-right:30px;}
+
+.auth-table-align-right {text-align:right;}
+
+
+a.bn-280-red-large {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bn-red-280-large.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 280px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: left;
+	margin-right: 4px;
+	margin-left: 4px;
+	font-size: 14px;
+}
+a.bn-280-red-large:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bn-red-280-large.gif);
+	text-align: center;
+	display: block;
+	height: 25px;
+	width: 280px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	background-position: top;
+	float: left;
+	margin-right: 4px;
+	font-size: 14px;
+}
+

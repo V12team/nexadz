@@ -17,8 +17,23 @@ Route::get('/', function () {
     return view('app');
 });
 
+
+
+
 Route::get('/customers', 'CustomerController@index');
 Route::get('/customers/dump', 'CustomerController@dump');
+//facebook creation compaign routes
+Route::get('/create-new-compaign', 'FacebookCampaign@createNewCompaign');
+Route::post('/create-new-compaign', 'FacebookCampaign@saveCompaign');
+
+// reports routes
+Route::get('/all-performance', 'CampaignReport@index');
+Route::get('/weekly-performance', 'CampaignReport@weeklyPerformance');
+Route::get('/monthly-performance', 'CampaignReport@monthlyPerformance');
+
+
+
+
 
 Route::group(['prefix' => 'customer'], function () {
     Route::get('/{id}', 'CustomerController@show');

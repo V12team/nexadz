@@ -1,0 +1,608 @@
+@charset "UTF-8";
+@import url("popup-profile.css");
+/* CSS Document */
+
+
+body {
+		font-family: "Lucida Grande", sans-serif, arial;
+	font-size: 13px;
+}
+
+.Block-4-Col-Balances {
+	background-image: url(../images/window-4-block-balance.jpg);
+	display: block;
+	height: 164px;
+	width: 774px;
+
+}
+
+
+.Table-4-Col-Balance {
+	text-align:center;
+	width: 744px;
+	margin: 0 auto;
+	margin-top:0;
+	}
+
+.PPC-Balance-Label {
+	font-size:14px;
+	margin-top:4px;
+	}
+	
+.PPC-Balance-Amount {
+	font-size:41px;
+	font-weight:bold;}
+	
+	
+.PPC-Balance-Impressions, .PPC-Balance-Clicks, .PPC-Balance-Leads {
+	font-size:24px;
+	font-weight:bold;
+	vertical-align:middle;
+	padding-top:10px;}	
+
+.PPC-Balance-Label-Color-1 {}
+.PPC-Balance-Label-Color-2 {color: #b50000;}
+.PPC-Balance-Label-Color-3 {color: #01801f;}
+.PPC-Balance-Label-Color-4 {color: #003db8;}
+.PPC-Balance-Label-Color-5 {color: #f26522;}
+.PPC-Balance-Label-Color-6 {color: #333333;}
+.PPC-Balance-Label-Color-7 {color: #669900;}	
+			
+	
+.PPC-Balance-Separator {
+	background-image: url(../images/ppc-balance-separator.gif);
+	background-repeat: repeat-y;
+	background-position: right;
+	}
+
+.PPC-Balance-Budget, .PPC-Balance-Used, .PPC-Balance-Available{
+	text-align:right;
+	padding-right:20px;
+}
+
+.PPC-Balance-Budget-Amount, .PPC-Balance-Used-Amount, .PPC-Balance-Available-Amount{
+	text-align:right;
+	padding-right:2px;
+}
+
+.PPC-Balance-Used-Amount, .PPC-Balance-Used{
+	border-bottom:1px solid #000000;}
+
+.PPC-Balance-Available, .PPC-Balance-Available-Amount{
+	padding-top:4px;
+}
+	
+.Table-Budget{
+	width:120px;
+	border-collapse:collapse;
+	border-spacing:0;
+	font-size:13px;
+	line-height:1.5em;
+	}
+	
+.Cell-Table-Budget{
+	padding-top:14px;
+	text-align:center;
+	padding-left:19px;}
+
+.View-Lead-Log{padding-top:4px;}
+	
+a.Button-Refill {
+	width: 120px;
+	height: 20px;
+	background-image: url(../images/bt-ppc-refill-duo.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: block;	
+	text-align:center;
+	padding-top:67px;
+	color:#FFF;
+	text-transform:uppercase;
+	text-decoration:none;
+	}	
+	
+	a.Button-Refill:hover {
+	background-position: center bottom;
+	
+	}
+	
+	
+a.Button-Reload {
+	width: 83px;
+	height: 18px;
+	background-image: url(../images/button-reload.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: block;	
+	text-align:center;
+	padding-top:67px;
+	color:#FFF;
+	text-transform:uppercase;
+	text-decoration:none;
+	}	
+	
+	a.Button-Reload:hover {
+	background-position: center bottom;
+	
+	}
+	
+.Div-Buttons{
+	display: block;
+	position: absolute;
+	z-index: 500;
+	width: 91px;
+	margin-top:104px;
+	margin-left:859px;
+	float:right;
+
+}
+
+a.Button-Activate {
+	width: 91px;
+	padding-top:8px;
+	width: 91px;
+	height: 23px;
+	background-image: url(../images/new-red-button.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: block;	
+	text-align:center;
+	color:#E50000;
+	font-size:14px;
+	font-family:raleway;
+	text-transform:uppercase;
+	text-decoration:none;
+	}	
+	
+	a.Button-Activate:hover {
+	background-position: center bottom;
+	color:#FFF;
+	}	
+	
+		
+	a.Button-Signup {
+	float:right;
+	margin-top:70px;
+	padding-top:4px;
+	width: 140px;
+	height: 20px;
+	background-image: url(../images/bn-red-140.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	display: block;	
+	text-align:center;
+	color:#FFF;
+	text-transform:uppercase;
+	text-decoration:none;
+	}	
+	
+a.Button-Signup:hover {
+	background-position: center top;
+	
+	}	
+	
+	
+			
+	a.Button-Signup-New {
+	float:right;
+	margin-top:64px;
+	margin-right:25px;
+	padding-top:8px;
+	width: 91px;
+	height: 23px;
+	background-image: url(../images/new-red-button.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: block;	
+	text-align:center;
+	color:#E50000;
+	text-transform:uppercase;
+	font-family:raleway;
+	font-size:14px;
+	text-decoration:none;
+	}	
+	
+a.Button-Signup-New:hover {
+	background-position: center bottom;
+	color:#FFFFFF;
+	
+	}	
+	
+	
+	
+	
+.Window-774-Email {
+	width: 774px;
+	background-image: url(../images/online-ads-emailmarketing.png);
+	background-position: top;
+	display: block;
+	height:172px;
+}	
+	
+.Window-774-Email h2{
+	background-repeat: no-repeat;
+	height: 23px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	padding-left: 45px;
+	padding-top: 26px;
+	text-transform: uppercase;
+	padding-bottom: 12px;
+	text-shadow: #333333 1px 1px 1px;
+}	
+	
+	
+.Window-774-PPC {
+	width: 774px;
+	background-image: url(../images/online-ads-ppc.png);
+	background-position: top;
+	display: block;
+	height:172px;
+}	
+	
+.Window-774-PPC h2{
+	background-repeat: no-repeat;
+	height: 23px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	padding-left: 45px;
+	padding-top: 26px;
+	text-transform: uppercase;
+	padding-bottom: 12px;
+	text-shadow: #333333 1px 1px 1px;
+}	
+
+.Window-774-Remarketing {
+	width: 774px;
+	background-image: url(../images/online-ads-remarketing.png);
+	background-position: top;
+	display: block;
+	height:172px;
+}	
+	
+.Window-774-Remarketing h2{
+	background-repeat: no-repeat;
+	height: 23px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	padding-left: 45px;
+	padding-top: 26px;
+	text-transform: uppercase;
+	padding-bottom: 12px;
+	text-shadow: #333333 1px 1px 1px;
+}	
+	
+.Window-774-4way {
+	width: 774px;
+	background-image: url(../images/online-ads-adv-balance-4way.png);
+	background-position: top;
+	display: block;
+	height:172px;
+}	
+	
+.Bt-PPC-Start {
+	display: block;
+	width: 67px;
+	height: 24px;
+	background-image: url(../images/bt-ppc-start.gif);
+	background-repeat: no-repeat;
+	background-position: center top;	
+	
+	}	
+	
+.Bt-PPC-Start:hover {
+	background-position: center bottom;	
+	
+	}	
+	
+.Bt-PPC-Stop {
+	display: block;
+	width: 67px;
+	height: 24px;
+	background-image: url(../images/bt-ppc-stop.gif);
+	background-repeat: no-repeat;
+	background-position: center top;	
+	
+	}	
+	
+.Bt-PPC-Stop:hover {
+	background-position: center bottom;	
+	
+	}		
+	
+.Bt-PPC-Button-Align {
+	float:right;
+	margin-left: 5px;
+	}
+	
+.Link-PPC-Active {
+	font-weight:bold;
+	color:#060;
+	
+	}
+	
+.Link-PPC-Stopped {
+		font-weight:bold;
+		color:#C00;
+		
+
+	}
+		
+	
+	
+a.button-small-80px-red {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-small-80px-red.png);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 80px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+	
+}
+a.button-small-80px-red:hover {
+	background-position: top;
+}
+
+
+a.button-small-80px-gray {
+	color: #000;
+	text-decoration: none;
+	background-image: url(../images/bt-small-80px-gray.png);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 80px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+	
+}
+a.button-small-80px-gray:hover {
+	background-position: top;
+}
+	
+.Mini-Popup-PPC-Budget {
+	background-color: #fbffd7;
+	padding: 8px;
+	border: 1px solid #000;
+	width:264px;
+	}
+	
+	
+	
+.Field-Budget-Popup {
+	width: 70px;
+	border: 1px solid #090;	
+	height:20px;
+	text-align:right;
+	font-size:14px;
+	padding-right:4px;
+	}
+	
+.Button-Popup-Budget-PPC-Float {
+	float:right;
+	}	
+
+.Button-Popup-Budget-PPC-Margin {
+	margin-left:5px;
+	}	
+	
+	
+	.Budget-Popup-Note {
+		color:#C00;
+		text-align:center;
+		display:block;
+		margin-top: 7px;
+		}
+		
+		
+		
+	
+a.Bt-X-Remove-ppc {
+	background-image: url(../images/admin/bt-x-remove-dual.gif);
+	background-position: bottom;
+	display: block;
+	height: 12px;
+	width: 12px;
+	
+	
+}
+a.Bt-X-Remove-ppc:hover, a.Bt-X-Remove-ppc:active {
+	background-position: top;
+}	
+
+.PPC-Feature-Popup-Edit {
+	margin:3px 0 0 4px;
+	}
+
+.PPC-Feature-Popup-Save {
+	margin:1px 0 0 4px;
+	}
+	
+.PPC-Feature-Popup-Delete {
+	margin: 5px 0 0 4px;
+	}
+		
+.PPC-Char-Counter {
+color:#666;	
+	}	
+	
+a.Bt-edit-ppc {
+	background-image: url(../images/bt-pen-simple-duo.png);
+	background-position: bottom;
+	display: block;
+	height: 15px;
+	width: 15px;	
+	
+}
+a.Bt-edit-ppc:hover, a.Bt-edit-ppc:active {
+	background-position: top;
+}		
+	
+.PPC-Bt-Adjust-Add-Feature {
+padding-top:2px !important;
+height:22px !important;
+margin-top:-2px;	
+margin-left:4px;
+	
+	}
+		
+.cell-ppc-balances {
+	
+	padding-top:6px;
+	}
+	
+	.Table-Features-PPC {
+	width:630px;
+	margin: 0 auto;	
+		
+		}
+		
+		
+		.Field-PPC-Feature {
+			width:200px;
+			}
+
+.Howitworks-Table{
+	margin-left:20px;
+	margin-top:10px;
+	border:0px;
+	}
+
+.Cell-Img-Howitworks{
+	width:125px;
+	text-align:right;
+	padding-right:25px;
+	vertical-align:top;
+	}
+	
+.Cell-Labels-Howitworks{
+	width:85px;
+	font-weight:bold;
+	text-align:right;
+	padding-right:15px;
+	padding-top:0px;
+	vertical-align:top;
+	}
+
+.Cell-Labels-Howitworks-Last{
+	width:85px;
+	text-align:right;
+	padding-right:15px;
+	padding-top:14px;
+	font-weight:bold;
+	text-decoration:underline;
+	vertical-align:top;
+	}
+	
+.Cell-Explanation-Howitworks{
+	padding-top:0px;	
+	vertical-align:top;
+	}
+	
+.Cell-Explanation-Howitworks strong{
+	color:#c90707;
+	}
+	
+.Cell-Explanation-Howitworks-Last{
+	padding-top:14px;	
+	vertical-align:top;
+	}
+	
+.Cell-Explanation-Howitworks-Last strong{
+	color:#c90707;
+	}
+	
+	
+	
+
+	
+.Lead-Log-Link{
+margin:49px 0 0 28px;
+z-index:995;
+position:absolute;
+}
+
+
+.Price-Lead-Log{
+	z-index:0;
+	position:absolute;
+	margin-left:49px;
+	}
+
+
+/*--------------------REMARKETING ---------*/
+.Cell-Remarketing{height:28px;vertical-align:initial;}
+.Cell-Remarketing-Date{text-align:center;vertical-align:middle;}
+.Cell-Remarketing-Used{width:16%;text-align:center;}
+.Cell-Remarketing-Left{width:16%;text-align:center;}
+.Cell-Remarketing-Impressions{width:16%;text-align:center;}
+.Cell-Remarketing-Clicks{width:16%;text-align:center;}
+.Cell-Remarketing-Leads{width:16%;text-align:center;}
+
+.Pagination-Remarketing{width:735px;display:inline;}
+.Status-Image{margin-left:5px;display:inline-block;}
+.Status-Image2{margin-left:3px;display:block;float:right;}
+.Top-Status-Action{float:right;display:block;margin-right:16px;margin-bottom:8px;width:230px;}
+
+
+
+/*---------------------------- MENU WITH ICONS ----------------------------------*/
+.Link-Sub-Level-2b {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #333;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    padding-left: 50px;
+    padding-right: 15px;
+    padding-top: 7px;
+    text-decoration: none;
+    width: 155px;
+}
+
+.Link-Sub-Level-2b-selected{
+	background-position:center top;
+	background-repeat: no-repeat;
+    color: #333;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    padding-left: 50px;
+    padding-right: 15px;
+    padding-top: 7px;
+    text-decoration: none;
+    width: 155px;}
+
+.Link-Sub-Level2-seo {background-image: url("../images/sidebar-icons-seo-duo.gif");}
+.Link-Sub-Level2-seo:hover {background-position:center top;}
+
+.Link-Sub-Level2-social {background-image: url("../images/sidebar-icons-social-duo.gif");}
+.Link-Sub-Level2-social:hover  {background-position:center top;}
+
+.Link-Sub-Level2-classifieds {background-image: url("../images/sidebar-icons-classifieds-duo.gif");}
+.Link-Sub-Level2-classifieds:hover  {background-position:center top;}
+
+.Link-Sub-Level2-email {background-image: url("../images/sidebar-icons-email-duo.gif");}
+.Link-Sub-Level2-email:hover {background-position:center top;}
+
+.Link-Sub-Level2-lead {background-image: url("../images/sidebar-icons-lead-duo.gif");}
+.Link-Sub-Level2-lead:hover {background-position:center top;}
+
+.Link-Sub-Level2-retargeting {background-image: url("../images/sidebar-icons-retargeting-duo.gif");}
+.Link-Sub-Level2-retargeting:hover  {background-position:center top;}
+
+

@@ -25,7 +25,7 @@ class CreateFacebookCampaigns extends Migration
             $table->string('objective' ,128);
             $table->text('data');
             $table->enum('network', ['facebook', 'instagram']);
-            $table->foreignId('ad_account_id')->references('id')->on('ad_accounts');
+            $table->foreignId('ad_account_id')->references('id')->on('ads_accounts');
             $table->timestamps();
         });
     }

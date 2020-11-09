@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* CSS Document */
+#cboxClose {
+    background: url("../images/controls.png") no-repeat scroll -25px 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    height: 25px;
+    position: absolute;
+    right: 18px;
+	top:46px;
+    text-indent: -9999px;
+    width: 25px;
+}
+
+#optimize-website {
+    margin-top:10px;
+    top: 0;
+}
+
+.description-text{
+line-height:30px;
+	margin-bottom:0px;
+	padding: 0 41px 10px 41px;
+	text-align:left;}
+
+.title-button-menu{
+	color:#3D3C3A;
+	font-family:Roboto,'Helvetica Neue',sans-serif;
+	font-size:20px;
+	}
+
+
+p.desc-but{
+	clear: both;
+    color: #959595;
+    font-family: Roboto,'Helvetica Neue',sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+	text-align:left;
+	}
+
+.container-butmenu{
+	
+	display:block;
+	line-height:2em;
+	}
+	
+#butmenu{
+	text-align:center;
+    width:990px;  /*---Give our UL a width ---*/
+    list-style:none;  /*--- Makes the bullets go away ---*/
+   /*--- Take out any default margin on the UL tag ---*/
+	padding-left:0;  /*--- Take out any default padding on the UL tag ---*/
+    margin-left:100px;
+	margin-right:auto;
+	margin-top:0px;/*--- Center the menu ---*/
+}
+ 
+#butmenu li{
+    float:left;  /*--- Make the list go horizontal ---*/
+    margin:0;
+}
+ 
+#butmenu li a{
+    display:block;  /*--- Make the entire button are clickable rather than the text alone ---*/
+    text-indent: -9999px; /*--- Push the text off screen to hide text---*/
+    overflow: hidden; /*--- Makes text outside of bounding box hidden ---*/
+    height:107px;
+	
+}
+
+#butmenu li.button-spacing a{
+	margin-right: 31px !important;
+    margin-bottom: 20px;
+    margin-left:auto;
+	}
+
+#butmenu li#link-optimize a{
+    background: url(../images/but-confidential-blue4.png) no-repeat;
+    width:105px;
+}
+ 
+#butmenu li#link-ranking a{
+    background: url(../images/but-ranking-blue.png) no-repeat;
+    width:105px;
+}
+
+#butmenu li#link-traffic a{
+    background: url(../images/but-traffic-blue.png) no-repeat;
+    width:105px;
+}
+ 
+#butmenu li#link-leads a{
+    background: url(../images/but-leads-blue.png) no-repeat;
+    width:105px;
+}
+
+#butmenu li#link-sales a{
+    background: url(../images/but-sales-blue.png) no-repeat;
+   width:105px;
+}
+ 
+#butmenu li#link-repeat a{
+    background: url(../images/but-repeat-blue.png) no-repeat;
+    width:105px;
+}
+
+
+/*--- Hovers ---*/
+#butmenu li#link-optimize a:hover{
+    background: url(../images/but-to-be-released-red4.png) no-repeat;
+}
+
+#butmenu li#link-ranking a:hover{
+    background: url(../images/but-ranking-red4.png) no-repeat;
+}
+
+#butmenu li#link-traffic a:hover{
+    background: url(../images/but-traffic-red4.png) no-repeat;
+}
+
+#butmenu li#link-leads a:hover{
+    background: url(../images/but-leads-red4.png) no-repeat;
+}
+
+#butmenu li#link-sales a:hover{
+    background: url(../images/but-sales-red4.png) no-repeat;
+}
+
+#butmenu li#link-repeat a:hover{
+    background: url(../images/but-repeat-red4.png) no-repeat;
+}
+
+/*--- current ---*/
+#butmenu li#link-optimize a.current{
+    background: url(../images/but-optimize-red4.png) no-repeat;
+    cursor:default;  /*--- Show pointer instead of hand cursor for the current page ---*/
+}
+
+#butmenu li#link-ranking a.current{
+    background: url(../images/but-ranking-red4.png) no-repeat;
+    cursor:default;  /*--- Show pointer instead of hand cursor for the current page ---*/
+}
+
+#butmenu li#link-traffic a.current{
+    background: url(../images/but-traffic-red4.png) no-repeat;
+    cursor:default;  /*--- Show pointer instead of hand cursor for the current page ---*/
+}
+
+#butmenu li#link-leads a.current{
+    background: url(../images/but-leads-red4.png) no-repeat;
+    cursor:default;  /*--- Show pointer instead of hand cursor for the current page ---*/
+}
+
+#butmenu li#link-sales a.current{
+    background: url(../images/but-sales-red4.png) no-repeat;
+    cursor:default;  /*--- Show pointer instead of hand cursor for the current page ---*/
+}
+
+#butmenu li#link-repeat a.current{
+    background: url(../images/but-repeat-red4.png) no-repeat;
+    cursor:default;  /*--- Show pointer instead of hand cursor for the current page ---*/
+}
+
+
+
+.clear{
+    clear:both;  /*--- Clears the float of the list items to restore normal document flow ---*/
+}
+
+.spec-bg{
+
+
+	background-color:#F3F6F2 !important;
+	}
+	
+.menu-round-buttons-container {
+	width: 990px;
+	text-align: center;
+	height: 127px;
+	padding-top: 12px;
+	background-image: url(../images/block-round-button-sm.png);
+	background-repeat: no-repeat;
+	z-index:1;
+	}
+
+
+
+
+.Bg-Z-Index {
+	z-index:10;
+	}
+
+
+.Top-cell {
+	background-image: url(../images/topline-background.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.MainBox {
+	padding: 15px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #900;
+	border-bottom-color: #900;
+	border-left-color: #900;
+	background-color:#FFF;
+}
+.Text-Title {
+	font-size: 19px;
+	font-weight: bold;
+	padding: 0 0 5px 0;
+	display:block;
+	color:#395997;
+}
+.Text-Details {
+	font-size: 13px;
+	padding: 0 0 5px 0;
+	display:block;
+	padding-left:14px;
+}
+.Text-Punchline {
+	font-size: 13px;
+	color:#395997;
+	padding: 0 0 10px 0;
+	display:block;
+}
+
+.Text-Title strong{
+	font-size: 19px;
+	font-weight: bold;
+	padding: 0px 0 5px 67px;
+	color:#395997;
+	display:inline-text !important;}
+
+.Action-Button {
+	background-image: url(../images/bt-hover-popup-duo.jpg);
+	background-position: center bottom;
+	display: block;
+	height: 26px;
+	width: 174px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 8px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.Action-Button:hover {
+		background-position: center top;
+
+	}

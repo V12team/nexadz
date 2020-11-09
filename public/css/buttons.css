@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*  Legacy  */
+
+.link-action-left{
+padding-left:10px;
+float:left;
+display:block;
+}
+
+.link-action-right{
+padding-right:15px;
+float:right;
+display:block;
+border:0px;
+border-style:none;
+margin-top:0px;
+background-repeat:no-repeat;
+}
+
+a.Bt-X-Remove-crm {
+	background-image: url(/images/admin/bt-x-remove-dual.gif);
+	background-position: bottom;
+	display: block;
+	height: 12px;
+	width: 12px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:3px;
+}
+a.Bt-X-Remove-crm:hover, a.Bt-X-Remove-crm:active {
+	background-position: top;
+}
+
+a.Link-Add-Signature{
+ background-image: url(../images/admin/icon-add-duo.gif);
+ background-repeat: no-repeat;
+ display: block;
+    height: 18px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding-left: 27px;
+    padding-top: 2px;
+	width:6px;
+	float:left;
+}
+
+a.Link-Add-Condition{
+ background-image: url(../images/admin/icon-add-duo.gif);
+ background-repeat: no-repeat;
+  display: block;
+    height: 18px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding-left: 27px;
+    padding-top: 2px;
+	width:6px;
+	float:left;
+}
+
+.email-schedule-button{
+margin: 10px 0 10px 0;
+background-image: url(../images/em_schedule_button.png);
+width:715px;
+height:35px;
+}
+
+.email-preview-button{
+margin: 10px 0 10px 0;
+background-image: url(../images/em_preview_button.png);
+width:715px;
+height:35px;
+}
+
+.email-content-button{
+margin: 10px 0 10px 0;
+background-image: url(../images/em_content_button.png);
+width:715px;
+height:35px;
+}
+
+
+.email-templates-button{
+margin: 10px 0 10px 0;
+background-image: url(../images/em_templates_button.png);
+width:715px;
+height:35px;
+}
+
+.email-lists-button{
+margin: 10px 0 10px 0;	
+background-image: url(../images/em_lists_button.png);
+width:715px;
+height:35px;
+}
+
+
+.em-progress-cell{
+	width:143px;
+	}
+	
+a.em-progress-bar{
+color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding-top: 3px;
+	text-transform: uppercase;
+}
+
+a.em-progress-bar:hover{
+	color: #000;
+	font-weight:bold;
+	text-align: center;
+	display: block;
+	padding-top: 3px;
+	text-transform: uppercase;
+}
+
+
+
+a.button-small-red {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+}
+a.button-small-red:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-140.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: top;
+	float: left;
+}
+
+
+/* End of Legacy 
+
+
+a.button-small {
+	color: #FFF;
+	text-decoration: none;
+	
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 140px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+	
+	}
+
+
+a.button-red {background-image: url(../images/admin/bn-red-140.gif);}
+
+
+*/
+
+/*------------- EBAY -------------*/
+
+	a.Button-Signup {
+	float:left;
+	margin-top:0px;
+	padding-top:2px;
+	width: 140px;
+	height: 22px;
+	background-image: url(../images/bn-red-140.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	display: block;	
+	text-align:center;
+	color:#FFF;
+	text-transform:uppercase;
+	text-decoration:none;
+	}	
+	
+a.Button-Signup:hover {
+	background-position: center top;
+	
+	}	
+	
+.Bt-Extra-Margin{margin-top:4px !important;}
+	
+.Buy-Now-Img{margin-top:4px;}

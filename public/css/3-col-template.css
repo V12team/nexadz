@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+		margin:0;
+		padding:0;
+		border:0;			/* Link-Header-Button-Edge-SelectedThis removes the border around the viewport in old versions of IE */
+	
+	
+	}
+	
+	
+	/* Header styles */
+	
+	/* 'widths' sub menu */
+	#layoutdims {
+		clear:both;
+		/*background:#eee;
+		/*border-top:4px solid #000; */
+		margin:0;
+		padding:6px 15px !important;
+		text-align:right;
+	}
+	/* column container */
+	.colmask {
+		position:relative;	/* This fixes the IE7 overflow hidden bug */
+		clear:both;
+		float:left;
+		width:100%;			/* width of whole page */
+		overflow:hidden;		/* This chops off any overhanging divs */
+	}
+	/* common column settings */
+	.colright,
+	.colmid,
+	.colleft {
+		float:left;
+		width:100%;			/* width of page */
+		position:relative;
+	}
+	.col1,
+	.col2,
+	.col3 {
+		float:left;
+		position:relative;
+		/*padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+						only padding top and bottom is included here, make it whatever value you need */
+		overflow:hidden;
+	}
+	/* 3 Column settings 1 2 1  */ 
+	.threecol {
+		/*background:#eee;		/* right column background colour */
+	}
+	.threecol .colmid {
+		right:216px;			/* width of the right column */
+		/*background:#fff;		/* center column background colour */
+	}
+	.threecol .colleft {
+		right:558px;			/* width of the middle column */
+		/*background:#f4f4f4;	/* left column background colour */
+	}
+	.threecol .col1 {
+		width:558px;			/* width of center column content (column width minus padding on either side) */
+		left:100%;			/* 100% plus left padding of center column */
+	}
+	.threecol .col2 {
+		width:216px;			/* Width of left column content (column width minus padding on either side) */
+		left:216px;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+	}
+	.threecol .col3 {
+		width:216px;			/* Width of right column content (column width minus padding on either side) */
+		left:774px;			/* Please make note of the brackets here:
+						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+	}
+	
+	
+	/* 3 Column settings 33% 33% 33%  */ 
+	.threecol33 {
+		/*background:#eee;		/* right column background colour */
+	}
+	.threecol33 .colmid {
+		right:330px;			/* width of the right column */
+		/*background:#fff;		/* center column background colour */
+	}
+	.threecol33 .colleft {
+		right:330px;			/* width of the middle column */
+		/*background:#f4f4f4;	/* left column background colour */
+	}
+	.threecol33 .col1 {
+		width:330px;			/* width of center column content (column width minus padding on either side) */
+		left:100%;			/* 100% plus left padding of center column */
+	}
+	.threecol33 .col2 {
+		width:330px;			/* Width of left column content (column width minus padding on either side) */
+		left:330px;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+	}
+	.threecol33 .col3 {
+		width:330px;			/* Width of right column content (column width minus padding on either side) */
+		left:660px;			/* Please make note of the brackets here:
+						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+	}
+	
+	
+	
+	
+	/* 2 Column settings */
+	.twocol {
+		/*background:#eee;		/* right column background colour */
+	}
+	.twocol .colmid {
+		right:0px;			/* width of the right column */
+		/*background:#fff;		/* center column background colour */
+	}
+	.twocol .colleft {
+		right:774px;			/* width of the middle column */
+		/*background:#f4f4f4;	/* left column background colour */
+	}
+	.twocol .col1 {
+		width:774px;			/* width of center column content (column width minus padding on either side) */
+		left:100%;			/* 100% plus left padding of center column */
+	}
+	.twocol .col2 {
+		width:216x;			/* Width of left column content (column width minus padding on either side) */
+		left:0px;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+	}
+	.twocol .col3 {
+		width:216px;			/* Width of right column content (column width minus padding on either side) */
+		left:774px;			/* Please make note of the brackets here:
+						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+	}
+	
+	
+	/* Footer styles */
+	#footer {
+	clear:both;
+	float:left;
+	font-size: 12px;
+	color: #666;
+	padding-top: 8px;
+	width: 100%;
+	}
+	#footer p {
+	margin:0;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 3px;
+	padding-bottom: 30px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+	}
+	
+	
+	#footer span {
+	display: block;
+	float: right;
+}

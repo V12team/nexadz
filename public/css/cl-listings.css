@@ -1,0 +1,427 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*  CL Listing Pages  */
+
+/*  Web Autopost */
+
+.Cell-CL-List-Web-Auto-Vehicle-OverFlow, .Cell-CL-List-MSC-Auto-Vehicle-OverFlow {
+	display: block;
+	float: left;
+	height: 16px;
+	overflow: hidden;
+	width: 200px;
+}
+
+.Cell-CL-List-Web-Auto-Vehicle {
+}
+.Cell-CL-List-Web-Auto-Date {
+	width: 10%;
+	text-align: center;
+}
+.Cell-CL-List-Web-Auto-Link {
+	width: 16%;
+	text-align: center;
+}
+
+
+.Cell-CL-List-Web-Auto-Del, .Cell-CL-List-Web-Auto-Renew, .Cell-CL-List-Web-Auto-Repost {
+	text-align: center;
+}
+.Cell-CL-List-Web-Auto-Del {
+	width: 9%;
+}
+.Cell-CL-List-Web-Auto-Renew {
+	width: 9%;
+}
+.Cell-CL-List-Web-Auto-Repost {
+	width: 9%;
+}
+.Cell-CL-List-Web-Auto-Status {
+	width: 13%;
+	text-align: center;
+}
+.Cell-Small-Text {
+}
+.Cell-Padding-4px {
+	padding: 4px;
+}
+.Form-Checkbox-2px-Left-Margin {
+	margin-left: 2px;
+}
+/*  Web Regular*/
+
+
+.Cell-CL-List-Regular-Vehicle-OverFlow {
+	display: block;
+	float: left;
+	height: 16px;
+	overflow: hidden;
+	width: 410px;
+}
+.Cell-CL-List-Regular-Date, .Cell-CL-List-Regular-Link, .Cell-CL-List-Regular-Price, .Cell-CL-List-Regular-Post, .Cell-CL-List-Regular-Age {
+	text-align: center;
+}
+.Cell-CL-List-Regular-Vehicle {
+}
+.Cell-CL-List-Regular-Date {
+	width: 10%;
+}
+.Cell-CL-List-Regular-Link {
+	width: 15%;
+}
+.Cell-CL-List-Regular-Price {
+	width: 13%;
+}
+.Cell-CL-List-Regular-Post {
+	width: 13%;
+}
+
+.Cell-CL-List-Regular-Age {
+width:8%;	
+}
+
+
+/*  Other  */
+
+
+
+
+.CL-Above-List-Controls {
+	padding: 0 15px;
+	margin-top: -10px;
+	margin-bottom:10px;
+}
+.CL-Above-List-Controls a {
+	margin-top: 5px;
+}
+.Bt-CL-Start {
+	background-image: url("../images/bt-cl-start.gif");
+	background-position: center top;
+	display: block;
+	float: right;
+	height: 24px;
+	margin-right: 5px;
+	width: 67px;
+}
+.Bt-CL-Start:hover {
+	background-position: center bottom;
+}
+.Bt-CL-Schedule {
+	background-image: url("../images/bt-cl-schedule.gif");
+	background-position: center top;
+	display: block;
+	float: right;
+	height: 24px;
+	margin-right: 5px;
+	width: 104px;
+}
+.Bt-CL-Schedule:hover {
+	background-position: center bottom;
+}
+
+.Bt-CL-Speed-Post {
+	background-image: url("../images/bt-cl-speed-post.gif");
+	background-position: center top;
+	display: block;
+	float: right;
+	height: 24px;
+	margin-right: 5px;
+	width: 119px;
+}
+.Bt-CL-Speed-Post:hover {
+	background-position: center bottom;
+}
+
+
+
+.Bt-CL-Stop {
+	background-image: url("../images/bt-cl-stop.gif");
+	background-position: center top;
+	display: block;
+	float: right;
+	height: 24px;
+	width: 67px;
+}
+.Bt-CL-Stop:hover {
+	background-position: center bottom;
+}
+
+
+
+/*    Backpage Regular   */
+
+
+.Cell-BP-Regular-Select { width:4%}
+.Cell-BP-Regular-Vehicle {}
+.Cell-BP-Regular-Views {width:12%;}
+.Cell-BP-Regular-Reset {width:8%;}
+.Cell-BP-Regular-PostDate {width:12%;}
+.Cell-BP-Regular-Post {width:10%;}
+
+.Cell-BP-Regular-PostDate, .Cell-BP-Regular-Reset, .Cell-BP-Regular-Views, .Cell-BP-Regular-Post {text-align:center;}
+
+
+
+
+/* Window Header Links   - Adjust size*/
+
+.Adjust-Regular {width:82px;}
+
+.Adjust-MSC-Auto {width:96px;}
+.Adjust-Web-Auto {width:88px;}
+.Adjust-Handsfree {width:100px;}
+
+
+
+a.bn-120-red {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-120.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 120px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: bottom;
+	float: right;
+	margin-left: 4px;
+}
+a.bn-120-red:hover {
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/admin/bn-red-120.gif);
+	text-align: center;
+	display: block;
+	height: 20px;
+	width: 120px;
+	padding-top: 4px;
+	text-transform: uppercase;
+	background-position: top;
+	float: right;
+}
+
+
+
+/*.cl-sync-button-adjust {margin-top:20px !important ;}*/
+
+
+
+/*   Hands Free   */
+
+.Cell-CL-List-HandsFree-Auto-Next {width:15%;
+text-align:center;}
+
+
+
+
+.Cell-CL-List-Hands-Free-Auto-Vehicle-OverFlow {
+	display: block;
+	float: left;
+	height: 16px;
+	overflow: hidden;
+	width: 280px;
+}
+
+/* Display Selected Vehicle count  */
+
+.CL-Auto-Text-Select-Count {
+	width:739px;
+	display:block;
+	margin: -4px auto 7px auto;
+	text-align:right;
+	font-weight:bold;
+	
+	}
+
+
+.cl-vehicle-count-top {
+	float:right;
+	clear:right;
+	font-weight:bold;
+	margin: 5px 0 8px 0;
+	}
+
+
+/*  CL Wire  +  Balane Windows*/
+
+
+
+.Window-CL-Wire {
+	width: 539px;
+	background-image: url(../images/window-cl-wire-whole.gif);
+	background-position: top;
+	display: block;
+		height:194px;
+
+}
+.Window-CL-Wire h2 {
+	background-image: url(../images/window-cl-wire-bg-header.gif);
+	background-repeat: no-repeat;
+	height: 23px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	padding-left: 45px;
+	padding-top: 26px;
+	text-transform: uppercase;
+	padding-bottom: 12px;
+	text-shadow: #333333 1px 1px 1px;
+}
+.Window-CL-Wire h3 {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #000;
+	clear:both;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 4px;
+	width: 479px;
+}
+.Window-CL-Wire .Win-Footer {
+	background-image: url(../images/window-cl-wire-bg-footer.gif);
+	display: block;
+	height: 39px;
+	width: 539px;
+	clear: both;
+}
+.Window-CL-Wire p {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+
+
+.Window-CL-Balance {
+	width: 235px;
+	background-image: url(../images/window-cl-balance.gif);
+	background-position: top;
+	display: block;
+	height:194px;
+}
+.Window-CL-Balance h2 {
+	height: 23px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	padding-left: 45px;
+	padding-top: 26px;
+	text-transform: uppercase;
+	padding-bottom: 12px;
+	text-shadow: #333333 1px 1px 1px;
+}
+.Window-CL-Balance h3 {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #000;
+	clear:both;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 4px;
+	width: 184px;
+}
+.Window-CL-Balance .Win-Footer {
+	background-image: url(../images/admin/window-558-bg-footer.gif);
+	display: block;
+	height: 39px;
+	width: 235px;
+	clear: both;
+}
+.Window-CL-Balance p {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+
+.Text-Cl-Balance-Large {
+	font-size:40px;
+}
+
+.Space-Bottom-5px 
+{margin-bottom:5px;}
+
+.Space-Bottom-3px 
+{margin-bottom:3px;}
+
+.Text-Cl-Balance-Large-Unit {
+	font-size:36px;
+	font-weight:normal;}
+
+
+
+
+/*  CL Log Usage */
+
+
+.Cell-CL-Log-Vehicle { }
+.Cell-CL-Log-Age { width: 8%;
+text-align:center; }
+.Cell-CL-Log-PostDate { width: 10%; text-align:center; }
+.Cell-CL-Log-PostLink { width: 16%; text-align:center; }
+.Cell-CL-Log-City { width: 26%; text-align:center; }
+
+
+
+/*    Lead on Demand Logs   */
+
+.Cell-LeadLog-MonthTitle{
+	padding:8px 0 8px 4px !important;
+	color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+	}
+	
+.Cell-Advanced-PPC-LeadLog-Vehicle {}
+.Cell-Advanced-PPC-LeadLog-Impressions {width:13%;text-align:center; }
+.Cell-Advanced-PPC-LeadLog-Amount {width:13%;text-align:center; }
+.Cell-Advanced-PPC-LeadLog-Clicks {width:13%;text-align:center; }
+.Cell-Advanced-PPC-LeadLog-CPC {width:13%;text-align:center; }
+.Cell-Advanced-PPC-LeadLog-Leads {width:13%;text-align:center; }
+
+
+
+.Window-Explain-Speedpost {
+	width: 722px;
+	margin: 0 auto 15px auto;
+	background-image: url(../images/window-speedpost-mid.gif);	
+	}
+	
+	
+.Window-Explain-Speedpost h2 {
+	background-image: url(../images/window-speedpost-top.gif);
+	color: black;
+margin: 0;
+padding: 0 0 0 19px;
+text-transform:capitalize;
+text-shadow:none;
+font-size:13px;
+}
+
+.Window-Explain-Speedpost p {
+	padding-left:19px;
+	}
+	
+	.Speed-Post-City-List {
+		float:right;
+		width:640px;
+		margin-bottom:8px;
+		}
+		
+		.Speed-Post-City-List li {
+	list-style-image: none;
+	list-style-type: none;
+	float:left;
+	margin-right:20px;
+	padding:0 0 4px;
+}
+
+.P-Margin-Top { margin-top:12px;}
+
+.P-Margin-Bottom {margin-bottom:10px;}
+
+.Speed-Post-Explanation-Color {
+	color: #7A7A7A;
+}

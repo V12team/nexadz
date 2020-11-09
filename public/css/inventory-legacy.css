@@ -1,0 +1,1440 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+@charset "UTF-8"; /*  CSS Document */
+
+/*  admin-list.css   */
+/*  =========   */
+/*  Contents   */
+/*  * Title Header   */
+/*  * Table Column Head   */
+/*  * Table Content   */
+/*  * Pagination   */
+/*  =========   */
+
+
+
+.Make-Header-Logo {
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+.Make-Header-Block {
+	height: 50px;
+	width: 100%;
+	background-color: #FFFFFF;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	border: 1px solid #888888;
+}
+.Make-Header-Block h2 {
+	display: block;
+	padding-left: 10px;
+	width: 75%;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	line-height: 50px;
+	background-color: #FFFFFF;
+}
+/*  Table header (Column) Style */
+
+.Column-Titles {
+	font-size: 12px;
+	font-weight: bold;
+	color: #666;
+	background-color: #e5e5e5;
+	margin-right: auto;
+	margin-left: auto;
+}
+.Column-Titles td {
+	padding: 4px;
+}
+.Column-Titles a {
+	color: #333;
+	text-decoration: none;
+}
+.Column-Titles a:hover, .Column-Titles a:active, .Column-Titles .selected {
+	text-decoration: underline;
+}
+.Column-Titles a {
+}
+.Column-Titles label {
+	font-size:11px;
+}
+.Column-Titles .help {
+} /*  Potential Help Link for each header column  */
+/* Table's Content*/
+
+.Block-List, .Block-List-Naked {
+	background-color: #FFF;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+.Block-List td {  /*  Style for Each Cell   */
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E0E0E0;
+	padding: 2px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #E0E0E0;
+}
+.Block-List .First-Column {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #E0E0E0;
+}
+
+.Block-List .First-Row {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #E0E0E0;
+}
+
+.Block-List-Naked td {padding: 2px;}
+
+.Block-List label {
+}
+/*  PAGINATION   */
+
+
+
+
+
+
+/*   AGE  RELATED COLORS   */
+
+
+.Age-Color1 {
+	background-color: #BEE7A5;
+}
+.Age-Color1:hover {
+	background-color: #8fcf68;
+}
+.Age-Color2 {
+	background-color: #FFFFAF;
+}
+.Age-Color2:hover {
+	background-color: #fdff5d;
+}
+.Age-Color3 {
+	background-color: #FFC6C3;
+}
+.Age-Color3:hover {
+	background-color: #ff9d97;
+}
+.Age-Color4 {
+	background-color: #E2CAFF;
+}
+.Age-Color4:hover {
+	background-color: #C79AFF;
+}
+.Age-Color5 {
+	background-color: #A4EAFF;
+}
+.Age-Color5:hover {
+	background-color: #8DCAFF;
+}
+/*   Pricing Condition related COlor   */
+
+
+.Pricing-Color1 {
+	background-color: #BEE7A5;
+}
+.Pricing-Color1:hover {
+	background-color: #8fcf68;
+}
+.Pricing-Color2 {
+	background-color: #FFFFAF;
+}
+.Pricing-Color2:hover {
+	background-color: #fdff5d;
+}
+.Pricing-Color3 {
+	background-color: #FFC6C3;
+}
+.Pricing-Color3:hover {
+	background-color: #ff9d97;
+}
+.Pricing-Color4 {
+	background-color: #E2CAFF;
+}
+.Pricing-Color4:hover {
+	background-color: #C79AFF;
+}
+.Pricing-Color5 {
+	background-color: #A4EAFF;
+}
+.Pricing-Color5:hover {
+	background-color: #8DCAFF;
+}
+.Pricing-Standard {
+	background-color: #FFF;
+}
+.Pricing-Standard:hover {
+	background-color: #DDF2FE;
+}
+.Default-ListColor {
+	background-color: #FFF;
+}
+.Default-ListColor:hover {
+	background-color: #DDF2FE;
+}
+.Alt-ListColor {
+	background-color: #F4F7F2;
+}
+.Alt-ListColor:hover {
+	background-color: #DDF2FE;
+}
+
+.Highlight-ListColor {
+	background-color: #ebf7fe;
+}
+
+.Highlight-ListColor:hover {
+	background-color: #DDF2FE;
+}
+
+
+ @charset "UTF-8";
+/*  admin-buttons.css   */
+/*  =========   */
+/*  ContentsL Blue Buttons   */
+/*  * Large   */
+/*   * On Blue   */
+/*   * On Gray   */
+/*  * Small   */
+/*   * On Blue   */
+/*   * On Gray   */
+/*  =========   */
+
+
+
+/* BLUE BUTTONS */
+
+
+
+
+
+
+
+
+
+
+/* BLUE BUTTONS */
+/* LARGE BUTTONS */
+/* ============= */
+
+/* ON BLUE  */
+
+
+	a.Bt-OnBlue-80px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-80px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 90px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-80px:hover, a.Bt-OnBlue-80px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-100px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-100px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 110px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-100px:hover, a.Bt-OnBlue-100px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-120px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-120px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 130px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-120px:hover, a.Bt-OnBlue-120px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-140px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-140px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 150px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-140px:hover, a.Bt-OnBlue-140px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-150px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-150px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 160px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-150px:hover, a.Bt-OnBlue-150px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-160px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-160px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 170px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-160px:hover, a.Bt-OnBlue-160px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-180px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-180px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 190px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-180px:hover, a.Bt-OnBlue-180px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-200px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-200px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 210px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-200px:hover, a.Bt-OnBlue-200px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-220px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-220px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 230px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-220px:hover, a.Bt-OnBlue-220px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-240px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-240px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 250px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-240px:hover, a.Bt-OnBlue-240px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-260px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onblue-260px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 270px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-260px:hover, a.Bt-OnBlue-260px:active {
+	background-position: top;
+	text-decoration: none;
+}
+/* ON GREY  */
+
+
+
+/* ON WHITE  */
+
+
+a.Bt-OnWhite-220px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onwhite-220px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 230px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnWhite-220px:hover, a.Bt-OnWhite-220px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnWhite-240px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onwhite-240px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 250px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnWhite-240px:hover, a.Bt-OnWhite-240px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnWhite-260px {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	background-image: url(../images/bt-large-onwhite-260px.gif);
+	background-position: bottom;
+	height: 33px;
+	width: 270px;
+	padding-top: 12px;
+	display: block;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnWhite-260px:hover, a.Bt-OnWhite-260px:active {
+	background-position: top;
+	text-decoration: none;
+}
+/* SMALL BUTTONS */
+/* ============= */
+
+
+
+/* ON BLUE  */
+
+a.Bt-OnBlue-Small-80px {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-onblue-80px.gif);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 88px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-80px:hover, a.Bt-OnBlue-Small-80px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-100px {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-onblue-100px.gif);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 108px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-100px:hover, a.Bt-OnBlue-Small-100px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-120px {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-onblue-120px.gif);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 128px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-120px:hover, a.Bt-OnBlue-Small-120px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-140px {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-onblue-140px.gif);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 148px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-140px:hover, a.Bt-OnBlue-Small-140px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-160px {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-onblue-160px.gif);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 168px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-160px:hover, a.Bt-OnBlue-Small-160px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-180px {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-onblue-180px.gif);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 188px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-180px:hover, a.Bt-OnBlue-Small-180px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-200px {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-onblue-200px.gif);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 208px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-200px:hover, a.Bt-OnBlue-Small-200px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-230px {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-onblue-230px.gif);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 238px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-230px:hover, a.Bt-OnBlue-Small-230px:active {
+	background-position: top;
+	text-decoration: none;
+}
+/* ON GREY  */
+
+
+a.Bt-OnGrey-Small-80px {
+	background-image: url(../images/bt-small-ongrey-80px.gif);
+	background-position: bottom;
+	display: block;
+	height: 24px;
+	width: 85px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	padding-top: 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-left: auto;
+}
+a.Bt-OnGrey-Small-80px:hover, a.Bt-OnGrey-Small-80px:active {
+	text-decoration: none;
+	background-position: top;
+}
+a.Bt-OnGrey-Small-160px {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-ongrey-160px.gif);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 168px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	text-decoration: none;
+}
+a.Bt-OnGrey-Small-160px:hover, a.Bt-OnGrey-Small-160px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnGrey-Small-100px {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-ongrey-100px.gif);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 108px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	margin-left: auto;
+	text-decoration: none;
+}
+a.Bt-OnGrey-Small-100px:hover, a.Bt-OnGrey-Small-100px:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnGrey-Small-200px {
+	background-image: url(../images/bt-small-ongrey-200px.gif);
+	background-position: bottom;
+	display: block;
+	height: 24px;
+	width: 208px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	padding-top: 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-right: auto;
+}
+a.Bt-OnGrey-Small-200px:hover, a.Bt-OnGrey-Small-200px:active {
+	text-decoration: none;
+	background-position: top;
+}
+a.Bt-OnGrey-Small-270px {
+	background-image: url(../images/bt-small-ongrey-270px.gif);
+	background-position: bottom;
+	display: block;
+	height: 24px;
+	width: 278px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	padding-top: 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-right: auto;
+}
+a.Bt-OnGrey-Small-270px:hover, a.Bt-OnGrey-Small-270px:active {
+	text-decoration: none;
+	background-position: top;
+}
+a.Bt-OnGrey-Small-280px {
+	background-image: url(../images/bt-small-ongrey-280px.gif);
+	background-position: bottom;
+	display: block;
+	height: 24px;
+	width: 288px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	padding-top: 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-right: auto;
+}
+a.Bt-OnGrey-Small-280px:hover, a.Bt-OnGrey-Small-280px:active {
+	text-decoration: none;
+	background-position: top;
+}
+/* APLHA PNG*/
+
+a.Bt-OnBlue-Small-160px-alpha {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-image: url(../images/bt-small-onblue-160px-alpha.png);
+	background-position: bottom;
+	text-align: center;
+	height: 24px;
+	width: 168px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 8px;
+	text-decoration: none;
+}
+a.Bt-OnBlue-Small-160px-alpha:hover, a.Bt-OnBlue-Small-160px-alpha:active {
+	background-position: top;
+	text-decoration: none;
+}
+ @charset "UTF-8";
+/*  CSS Document */
+
+/*  admin-specific-current-inventory.css   */
+/*  ===============   */
+/*  Contents   */
+/*  * Top Elements ( above list)   */
+/*  * Legend ( Age )   */
+/*  * Column Width   */
+/*  * Sub Tables (print, counter)   */
+/*  * Fields   */
+/*  * Image Buttons   */
+/*  ===============   */
+
+
+/*  ABOVE THE LIST */
+/*  Search, View, legend */
+
+
+.Top {
+	width: 100%;
+	margin-bottom: 8px;
+}
+#Top .View {
+	text-align: left;
+	width: 450px;
+}
+#Top a.selected {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+.Top .SearchField {
+	text-align: right;
+}
+.Top .Button {
+	width: 85px;
+}
+.Top label {
+}
+/* ALegend Elements */
+
+.Legend {
+	font-size: 13px;
+	width: 100%;
+}
+.Legend-Age-Color1 {
+	background-color: #D2EAB4;
+	border: 1px solid #8fcf68;
+	text-align: center;
+	padding: 2px;
+	font-size: 11px;
+	font-weight: bold;
+	display: block;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+.Legend-Age-Color2 {
+	background-color: #FFFFAF;
+	border: 1px solid #FFCA65;
+	text-align: center;
+	padding: 2px;
+	font-size: 11px;
+	font-weight: bold;
+	display: block;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+.Legend-Age-Color3 {
+	background-color: #FFC6C3;
+	border: 1px solid #ff9d97;
+	text-align: center;
+	padding: 2px;
+	font-size: 11px;
+	font-weight: bold;
+	display: block;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+.Legend-Age-Color4 {
+	background-color: #E2CAFF;
+	border: 1px solid #D69AFF;
+	text-align: center;
+	padding: 2px;
+	font-size: 11px;
+	font-weight: bold;
+	display: block;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+.Legend-Age-Color5 {
+	background-color: #8FEBFF;
+	border: 1px solid #70CBFF;
+	text-align: center;
+	padding: 2px;
+	font-size: 11px;
+	font-weight: bold;
+	display: block;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+.Legend .Cell-Spacer {
+}
+.Legend .Cell-Enabled {
+}
+.Legend .Cell-Disabled {
+	width: 160px;
+}
+.Legend .Cell-CheckIcons {
+	width: 28px;
+}
+.Legend .Cell-Setup {
+	width: 108px;
+}
+.Legend .Cell-Colors {
+	width: 50px;
+}
+.Legend .Cell-InventoryByAge {
+	text-align: right;
+}
+/* Sub Table PRINT */
+
+.Print {
+	width: 50px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.Print td {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+/* Sub Table COUNTER */
+
+.Counter {
+	width: 100px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.Counter td {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+/* Form Fields  */
+
+.Field-Special {
+	width: 50px;
+	text-align:right;
+}
+.Field-Search {
+	width: 120px;
+}
+/* Special Image Buttons */
+
+
+
+
+a.Check {
+	background-image: url(../images/inventory-enabled-dual.png);
+	display: block;
+	height: 20px;
+	width: 24px;
+	background-position: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Check:hover {
+	background-position: top;
+}
+a.Check:active {
+	background-position: bottom;
+}
+a.Un-Check {
+	background-image: url(../images/inventory-disabled-dual.png);
+	background-position: center;
+	height: 20px;
+	width: 24px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+a.Un-Check:hover {
+	background-position: top;
+}
+a.Un-Check:active {
+	background-position: bottom;
+}
+a.Reset {
+	background-image: url(../images/inventory-reset-dual.png);
+	background-position: center;
+	height: 20px;
+	width: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+a.Reset:hover {
+	background-position: top;
+}
+a.Reset:active {
+	background-position: bottom;
+}
+/* Buyers guide   ================================================================================================================================================  */
+
+
+.BuyersGuide-Cell-Systems, .BuyersGuide-Cell-Duration {
+	width:250px;
+}
+.BuyersGuide-Cell-Percent {
+	width:30px;
+}
+.BuyersGuide-Field-DropDown {
+	width:250px
+}
+/*  Inventory  Details   */
+
+
+
+.Table-Layout-InvDetail {
+	width: 100%;
+}
+.Table-Layout-InvDetail td {
+	text-align: left;
+}
+.Table-Layout-InvDetail .Table-Layout-InvDetail-Left {
+	width: 80%;
+}
+.Table-Form-InvDetails {
+	width: 100%;
+}
+.Field-dd-Inventory-Details {
+	width: 190px;
+}
+.Cell-InvDetail-DescriptionRelated {
+	width:350px;
+}
+.Table-Form-InvDetails td {
+	padding: 2px;
+}
+.Table-Form-InvDetails-Label {
+	width: 35%;
+}
+.Table-Form-InvDetails-Label-Instructions {
+	vertical-align: top;
+}
+.Fiedset-GenericDescription {
+	width:70%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.Table-EditDesc-overview {
+	width:100%;
+	border: 1px solid #386b9f;
+}
+.Table-EditDesc-overview label {
+	color: #333;
+}
+.Table-EditDesc-overview h2 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+	display: inline;
+}
+.Table-EditDesc-overview td {
+}
+.Cell-EditDescBloc-Photo {
+	width:100px;
+}
+.Cell-EditDescBloc-1stCol  {
+	width:38%;
+}
+.Cell-EditDescBloc-2ndCol {
+	width:18%;
+}
+.Cell-EditDescBloc-3rdCol {
+	width:18%;
+}
+.Cell-EditDescBloc-4thCol {
+	width:auto
+}
+.Span-EditDescBlock-AgeColor1 {
+	color: #090;
+	font-weight: bold;
+}
+.Span-EditDescBlock-AgeColor1 {
+}
+.Span-EditDescBlock-AgeColor3 {
+}
+.Span-EditDescBlock-AgeColor4 {
+}
+.Span-EditDescBlock-AgeColor5 {
+}
+.Span-EditDescBlock-Active {
+	color: #00B900;
+	font-weight: bold;
+}
+.Span-EditDescBlock-In-Progress {
+	color: #FF7000;
+	font-weight: bold;
+}
+.div-managephoto {
+	background-color: #FFF;
+	border: 1px solid #666;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+.frame-selection {
+	background-color: #ddeeff;
+	display: block;
+	border: 1px solid #9dc8fe;
+}
+/*   3rd party inventory*/
+
+.Table-Form-3rdpartyfeed {
+	width:100%
+}
+.Table-Form-3rdpartyfeed td {
+}
+.Table-Form-3rdpartyfeed .Table-Form-3rdpartyfeed-LeftCol {
+	width:30%;
+}
+/*  Vetica menu structure*/
+
+.Table-CustActivity-Menu {
+	border: 1px solid #386b9f;
+}
+.Table-CustActivity-Menu td {
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+}
+.Table-CustActivity-Menu-last-td {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+}
+/*  Inv Details  Size Tweak on Vertical Menu  */
+
+
+a.Bt-InvDetail-VerticalSizeAdjust {
+	padding-top: 5px;
+	height: 21px;
+}
+.New-Legend {
+	display: block;
+	float: right;
+	padding-top: 2px;
+}
+/*  Commons*/
+	
+	
+	
+
+
+/*  HEADER   */
+/*  ======   */
+
+.Table-Dashboard td {
+	background-image: url(../images/setup-call-text.gif);
+	display: block;
+	float: left;
+	height: 47px;
+	width: 268px;
+	margin-top: 2px;
+	margin-left: 20px;
+}
+#Header a.menu-support {
+	display:block;
+	background-image: url(../images/menu-support-dual.gif);
+	background-repeat: no-repeat;
+	background-position: 0 top;
+	width: 140px;
+	height: 13px;
+	white-space:nowrap;
+	margin-top: 15px;
+}
+.Table-CL-Template-Selector img {
+	background-position: 0 bottom;
+}
+#Header a.menu-logout {
+	display:block;
+	background-image: url(../images/menu-logout-dual.gif);
+	background-repeat: no-repeat;
+	background-position: 0 top;
+	width: 56px;
+	height: 13px;
+	margin-left: 15px;
+	float: right;
+}
+#Header a.menu-logout:hover, #Header a.menu-logout:active {
+	background-position: 0 bottom;
+}
+/*   BIG RED BUTTONS    */
+
+	a.Bt-OnBlue-red-ineedhelp {
+	background-image: url(../images/bt-red-ineedhelp-dual.jpg);
+	background-position: bottom;
+	height: 52px;
+	width: 198px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-red-ineedhelp:hover, a.Bt-OnBlue-red-ineedhelp:active {
+	background-position: top;
+	text-decoration: none;
+}
+a.Bt-OnBlue-red-viewtutorials {
+	background-image: url(../images/bt-red-viewtutorials-dual.jpg);
+	background-position: bottom;
+	height: 52px;
+	width: 198px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-OnBlue-red-viewtutorials:hover, a.Bt-OnBlue-red-viewtutorials:active {
+	background-position: top;
+	text-decoration: none;
+}
+.Table-Layout-InvDetail .Table-Layout-InvDetail-Left {
+	text-align: right;
+}
+.Pic-Inventory-List {
+	float: left;
+	margin-right: 3px;
+	border: 1px solid #000;
+}
+/*  Image LInks  Buttons*/
+
+
+
+
+a.Bt-X-Arrow {
+	background-image: url(../images/bt-x-arrowdown-dual.gif);
+	background-position: bottom;
+	display: block;
+	height: 12px;
+	width: 12px;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-X-Arrow:hover, a.Bt-X-Arrow:active {
+	background-position: top;
+}
+
+
+
+a.Bt-Editcolor {
+	background-image: url(images/bt-edit-color-dual.gif);
+	background-position: bottom;
+	display: block;
+	height: 15px;
+	width: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+a.Bt-Editcolor:hover, a.Bt-Editcolor:active {
+	background-position: top;
+}
+
+
+#Container {
+	width: 990px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+/******************** menu for template t65****************/
+
+a.Bt-X-Remove {
+    background-image: url("../images/admin/bt-x-remove-dual.gif");
+    background-position: center bottom;
+    display: block;
+    height: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12px;
+}
+
+a.Bt-X-Remove:hover, a.Bt-X-Remove:active {
+	background-position: top;
+}
+
+.Cell-Website-Sec-Menu-Display {
+    text-align: center;
+    width: 75px;
+}
+.Cell-Website-Sec-Menu-PageType {
+    width: 180px;
+}
+.Cell-Website-Sec-Menu-Menu-Label {
+}
+.Cell-Website-Sec-Menu-Order {
+    text-align: center;
+    width: 70px;
+}
+.Cell-Website-Sec-Menu-Del {
+    text-align: center;
+    width: 6%;
+}
+.Field-Website-Sec-Menu-Label {
+    width: 152px;
+}
+
+.char-blue{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-style:italic;
+	font-weight:bold;
+	color:#106eae;
+	font-size:15px;}
+
+.notification-green{
+	margin:auto;
+	padding:10px;
+	background:#dbfaac;
+	color:#000;
+	font-size:15px;
+	border:1px solid #479742;
+	width:692px;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.notification-green-txt{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-style:italic;
+	font-weight:bold;
+	color:#328b37;
+	font-size:16px;
+}
+
+.notification-red{
+	margin:auto;
+	padding:10px;
+	background:#fed4d5;
+	color:#000;
+	font-size:15px;
+	border:1px solid #d40c0c;
+	width:692px;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+	}
+	
+.notification-red-txt{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-style:italic;
+	font-weight:bold;
+	color:#d40c0c;
+	font-size:16px;
+}
+
+.notif-bullets{
+	list-style-type:disc;
+	margin-left:20px;}
+	
+.notif-text{
+	margin:-29px 0 0 40px;
+	line-height:1.8em;
+	}
+
+.bn-140-grey{
+    background-image: url("../images/bn-grey-140.gif");
+    background-position: center bottom;
+    color: #fff;
+    display: block;
+    float: right;
+    height: 20px;
+    margin-left: 4px;
+    padding-top: 4px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 140px;
+}
+
+.bn-140-grey:hover{
+	background-position: center top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a.Bt-X-Rubbish {
+    background-image: url("../images/icons/rubbish-ico2.png");
+    background-position: center top;
+    display: block;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15px;
+}
+
+a.Bt-X-Rubbish:hover {
+    background-position: center bottom;
+    height: 20px;
+}

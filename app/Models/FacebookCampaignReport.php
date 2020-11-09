@@ -14,4 +14,5 @@ class FacebookCampaignReport extends Model
         return $this->fill($data)
             ->saveOrFail();
     }
+
 }

@@ -98,7 +98,7 @@ class CustomerController extends Controller
             Log::info('Error in : ' . $e->getFile() . ' line ' . $e->getLine());
             Log::info('Error message : ' . $e->getMessage());
         }
-        return view('pages.datatables', compact('page_title', 'page_description', 'customers'));
+        return view('reports.customersList', compact('page_title', 'page_description', 'customers'));
     }
 
     public function show($customer_id)
