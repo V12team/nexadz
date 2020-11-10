@@ -13,8 +13,10 @@ class CreateGoogleCampaignsReports extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('google_campaigns_reports');
         Schema::create('google_campaigns_reports', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('campaign_id')->references('id')->on('google_campaigns');
             $table->string('google_campaigns_id', 255);
             $table->date('date');
             $table->integer('impression');

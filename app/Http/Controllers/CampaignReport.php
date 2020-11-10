@@ -97,20 +97,22 @@ AND fg.spend > 0 AND DATE_FORMAT(fg.date,'%Y-%m-%d') BETWEEN '" . $start_date . 
                 ->query("SELECT DATE_FORMAT(date,'%Y-%b') AS month, DATE_FORMAT(date,'%Y-%m') AS month_num, COUNT(DISTINCT customers) AS customers, SUM(amount) AS amount 
 
 FROM  (
-# SQL Query for Facebook
-SELECT gc.date, adsacc.customer_id AS customers, gc.costs AS amount 
+# SQL Query for google
+SELECT gc.date, adsacc.customer_id AS customers, gc.spend AS amount 
 FROM ads_accounts adsacc
 
-INNER JOIN google_campaigns_reports gc ON gc.google_campaigns_id = adsacc.ad_account_id
+INNER JOIN google_campaigns c ON c.ad_account_id = adsacc.ad_account_id #OK
+INNER JOIN google_campaigns_reports gc ON gc.campaign_id = c.id
+
 WHERE adsacc.ad_service = 'adwords' AND adsacc.is_active = 1
 
-AND gc.costs > 0 AND DATE_FORMAT(gc.date,'%Y-%m-%d') BETWEEN DATE_SUB(DATE_FORMAT(NOW() ,'%Y-%m-01'), interval 11 month) AND DATE_FORMAT(NOW() ,'%Y-%m-%d')
+AND gc.spend > 0 AND DATE_FORMAT(gc.date,'%Y-%m-%d') BETWEEN DATE_SUB(DATE_FORMAT(NOW() ,'%Y-%m-01'), interval 11 month) AND DATE_FORMAT(NOW() ,'%Y-%m-%d')
 
 
 UNION ALL
 
-# SQL Query for Facebook t
-SELECT fg.date, year(DATE_FORMAT(fg.date,'%Y-%m-%d')) AS year, adsacc.customer_id AS customers, fg.spend AS amount 
+# SQL Query for Facebook
+SELECT fg.date, adsacc.customer_id AS customers, fg.spend AS amount 
 FROM ads_accounts adsacc
 
 INNER JOIN facebook_campaigns c ON c.ad_account_id = adsacc.ad_account_id
@@ -119,7 +121,6 @@ INNER JOIN facebook_campaigns_reports fg ON fg.campaign_id = c.id
 WHERE adsacc.ad_service = 'facebook_ads' AND adsacc.is_active = 1
 
 AND fg.spend > 0 AND DATE_FORMAT(fg.date,'%Y-%m-%d') BETWEEN DATE_SUB(DATE_FORMAT(NOW() ,'%Y-%m-01'), interval 11 month) AND DATE_FORMAT(NOW() ,'%Y-%m-%d')
-
 
 ) AS month_table GROUP BY MONTH(DATE_FORMAT(date,'%Y-%m-%d')) ORDER BY date DESC")
                 ->fetchAll(PDO::FETCH_ASSOC);

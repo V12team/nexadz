@@ -13,6 +13,7 @@ class CreateGoogleCampaigns extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('google_campaigns');
         Schema::create('google_campaigns', function (Blueprint $table) {
             $table->id();
             $table->string('campaign_id', 255);
