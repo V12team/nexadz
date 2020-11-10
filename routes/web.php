@@ -37,9 +37,13 @@ Route::get('/monthly-performance', 'CampaignReport@monthlyPerformance');
 
 Route::group(['prefix' => 'customer'], function () {
     Route::get('/{id}', 'CustomerController@show');
-    Route::group(['middleware' => \App\Http\Middleware\secureWebhook::class], function () {
-        Route::get('/balance/update', 'CustomerController@updateBalance');
-    });
 });
 
 Route::get('/adaccount/create/{id}', 'AdController@createAdAccount');
+
+// Webhooks
+Route::group(['middleware' => \App\Http\Middleware\secureWebhook::class], function () {
+    Route::group(['prefix' => 'zoho'], function () {
+        Route::post('/balance/update', 'CustomerController@updateBalance');
+    });
+});

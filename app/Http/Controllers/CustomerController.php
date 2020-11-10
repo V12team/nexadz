@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Libs\ZohoApi;
 use App\Models\AdAccount;
+use App\Models\BalanceTransaction;
 use App\Models\Customer;
+use App\Services\FacebookAdsService;
 use Illuminate\Http\Request;
 use DateTime;
 use Log;
@@ -25,16 +27,22 @@ class CustomerController extends Controller
      * @var App\Models\AdAccount
      */
     private $_adAccount;
+    /**
+     * @var BalanceTransaction
+     */
+    private $_balanceTransaction;
 
     public function __construct(
         ZohoApi $zohoApi,
         Customer $customer,
-        AdAccount $adAccount
+        AdAccount $adAccount,
+    BalanceTransaction $balanceTransaction
     )
     {
         $this->_zoho_api = $zohoApi->getApi();
         $this->_customer = $customer;
         $this->_adAccount = $adAccount;
+        $this->_balanceTransaction = $balanceTransaction;
     }
 
     public function index()
@@ -48,9 +56,7 @@ class CustomerController extends Controller
             $invoices = $this->_zoho_api->getInvoices([
                 'filter_by' => 'Status.Unpaid',
             ]);
-            $invoices = isset($invoices['message']) && $invoices['message'] == 'success'
-                ? $invoices['invoices']
-                : false;
+            $invoices = $invoices['invoices'] ?? false;
             if ($invoices) {
                 foreach ($invoices as $key => $invoice) {
                     $unpaid_invoices[$invoice['customer_id']][] = $invoice;
@@ -58,9 +64,7 @@ class CustomerController extends Controller
             }
             foreach ($customers as $customer) {
                 $subscriptions = $this->_zoho_api->getSubscriptions(['customer_id' => $customer->external_id]);
-                $subscriptions = isset($subscriptions['message']) && $subscriptions['message'] == 'success'
-                    ? $subscriptions['subscriptions']
-                    : false;
+                $subscriptions = $subscriptions['subscriptions'] ?? false;
                 if ($subscriptions) {
                     foreach ($subscriptions as $subscription) {
                         if ($subscription['shipping_interval_unit'] == 'months') {
@@ -103,9 +107,16 @@ class CustomerController extends Controller
 
     public function show($customer_id)
     {
-        $customer = $this->_zoho_api->getCustomer([
+        /*$customer = $this->_zoho_api->getCustomer([
             'customer_id' => $customer_id
-        ]);
+        ]);*/
+        $customer = $this->_customer::find($customer_id);
+        /*$fb_api = new FacebookAdsService(
+            env('FACEBOOK_APP_ID'),
+            env('FACEBOOK_APP_SECRET'),
+            env('FACEBOOK_TOKEN')
+        );
+        $adAccountId = $fb_api->createAdAccount("{$customer_id} - {$customer->first_name} {$customer->last_name}");*/
         dd($customer);
     }
 
@@ -178,16 +189,17 @@ class CustomerController extends Controller
 
     public function updateBalance(Request $request)
     {
-        $res = '{
+        // payload format example
+        /*$res = '{
     "payment_id": "9030000079467",
     "payment_mode": "cash",
-    "amount": 450,
-    "amount_refunded": 50,
+    "amount": 130,
+    "amount_refunded": 0,
     "date": "2016-06-05",
     "status": "success",
     "reference_number": "INV-384",
     "description": "Payment has been added to INV-384",
-    "customer_id": "903000000000099",
+    "customer_id": "2221476000000120041",
     "customer_name": "Bowman Furniture",
     "email": "benjamin.george@bowmanfurniture.com",
     "autotransaction": {
@@ -202,11 +214,11 @@ class CustomerController extends Controller
     },
     "invoices": [
         {
-            "invoice_id": "90300000079426",
+            "invoice_id": "2221476000000152001",
             "invoice_number": "INV-384",
             "date": "2016-06-05",
-            "invoice_amount": 450,
-            "amount_applied": 450,
+            "invoice_amount": 130,
+            "amount_applied": 130,
             "balance_amount": 0
         }
     ],
@@ -223,9 +235,9 @@ class CustomerController extends Controller
             "data_type": "text"
         }
     ]
-}';
+}';*/
         try {
-            $payload = json_decode($request->getContent(), true);
+            $payload = $request->all();
             if (!empty($payload['payment_id']) && !empty($payload['customer_id']) && !empty($payload['amount']) && !empty($payload['invoices'])) {
                 $customer = $this->_customer::where('external_id', '=', $payload['customer_id'])
                     ->first();
@@ -234,22 +246,32 @@ class CustomerController extends Controller
                         $z_invoice = $this->_zoho_api->getInvoice([
                             'invoice_id' => $payload['invoices'][0]['invoice_id']
                         ]);
+                        $z_invoice = $z_invoice['invoice'] ?? false;
                         if (isset($z_invoice['invoice_id'])) {
                             if (isset($z_invoice['invoice_items'][0])) {
                                 if ($z_invoice['invoice_items'][0]['code'] != 'Basic' && $payload['status'] == 'success') {
+                                    $before_balance = $customer->balance;
                                     $customer->balance += (int)$payload['amount'];
+                                    $customer->save();
+                                    $this->_balanceTransaction->addRefillTransaction($customer->id, $before_balance, $customer->balance);
+                                    Log::info('Refill balance for customer : ' . $customer->id);
                                 } else {
                                     if ($payload['status'] == 'success') {
                                         $customer->status = Customer::STATUS_ACTIVE;
+                                        $customer->save();
+                                        Log::info('Invoice paid for customer : ' . $customer->id);
+                                        Log::info('Change status to ' . Customer::STATUS_ACTIVE . ' for customer : ' . $customer->id);
                                     } else {
                                         #TODO notify with an email
                                         $customer->status = Customer::STATUS_SUSPEND_PAYMENT;
+                                        $customer->save();
+                                        Log::info('Invoice not paid for customer : ' . $customer->id);
+                                        Log::info('Change status to ' . Customer::STATUS_SUSPEND_PAYMENT . ' for customer : ' . $customer->id);
                                     }
                                 }
-                                if ($customer->isDirty()) {
-                                    $customer->save();
-                                }
                             }
+                        } else {
+                            Log::info('Error : Not found zoho invoice : ' . $payload['invoices'][0]['invoice_id'] . ' with api call.');
                         }
                     }
                 } else {
@@ -260,6 +282,5 @@ class CustomerController extends Controller
             Log::info('Error in : ' . $e->getFile() . ' line ' . $e->getLine());
             Log::info('Error message : ' . $e->getMessage());
         }
-        dd($payload);
     }
 }

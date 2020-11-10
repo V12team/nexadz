@@ -160,13 +160,8 @@ class FacebookBilling extends Command
             $customerEntity->balance = $currentBalance - $spend;
             $customerEntity->save();
         }
-        $this->_balanceTransaction->create([
-            'type' => 'Billing',
-            'message' => 'Billing cron job facebook',
-            'before_balance' => $currentBalance,
-            'after_balance' => ($currentBalance - $spend),
-            'customer_id' => $customer_id
-        ]);
-        return ($currentBalance - $spend);
+        $after_balance = $currentBalance - $spend;
+        $this->_balanceTransaction->addFacebookBilling($customer_id, $currentBalance, $after_balance);
+        return $after_balance;
     }
 }

@@ -93,11 +93,11 @@ class FacebookAdsService
         $this->account = "act_{$account}";
     }
 
-    public function createAdAccount($adAccountName, $fundingId = 0, $businessId = 0 ){
+    public function createAdAccount($adAccountName, $fundingId = 0, $businessId = 318550401827287 ){
         $adAccount = (new Business($businessId))->createAdAccount(
             [ AdAccountFields::ACCOUNT_ID, AdAccountFields::ID  ],
             array(
-                'funding_id'=> $fundingId,
+                //'funding_id'=> $fundingId,
                 AdAccountFields::NAME => $adAccountName,
                 AdAccountFields::CURRENCY => 'USD',
                 AdAccountFields::TIMEZONE_ID => '1' ,

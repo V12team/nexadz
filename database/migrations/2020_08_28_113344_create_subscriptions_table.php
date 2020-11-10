@@ -16,6 +16,7 @@ class CreateSubscriptionsTable extends Migration
         Schema::dropIfExists('subscriptions');
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
+            $table->enum('type', ['account_fee', 'budget']);
             $table->string('subscription_id')->unique();
             $table->string('package_id', 128);
             $table->string('plan_id', 128);

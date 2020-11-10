@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+/*Route::group(['prefix' => 'customer'], function () {
+    Route::group(['middleware' => \App\Http\Middleware\secureWebhook::class], function () {
+        Route::post('/balance/update', 'CustomerController@updateBalance');
+    });
+});*/
