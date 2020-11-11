@@ -51,6 +51,11 @@
                         <span class="menu-text">All Active Customers</span>
                     </a>
                 </li>
+                <li class="menu-item {{ Request::is('*/customers-with-budget-and-no-campaign') ? 'menu-item-active' : '' }}" aria-haspopup="true">
+                    <a href="{{ url('/customers-with-budget-and-no-campaign') }}" class="menu-link">
+                        <span class="menu-text" style="color: #ff5733;">Customers With Budget And No Campaign</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

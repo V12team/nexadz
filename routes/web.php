@@ -31,6 +31,7 @@ Route::get('/all-performance', 'CampaignReport@index');
 Route::get('/weekly-performance', 'CampaignReport@weeklyPerformance');
 Route::get('/monthly-performance', 'CampaignReport@monthlyPerformance');
 Route::get('/all-active-customers', 'CampaignReport@allActiveCustomers');
+Route::get('/customers-with-budget-and-no-campaign', 'CampaignReport@getCustomersWithNoCampaigns');
 
 
 

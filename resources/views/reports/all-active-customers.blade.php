@@ -49,14 +49,14 @@
                 </div>
             </div>
             <div class="card-body">
-                <h3 class="text-center pt-5 pb-5">AD360 performance
+                <h3 class="text-center pt-5 pb-5">NEXADZ performance
                     From <?= date('d M Y', strtotime($start_date)) ?>
                     To <?= date('d M Y', strtotime($end_date)) ?></h3>
                 <table class="table table-bordered table-hover" id="kt_datatable">
                     <thead>
                         <tr>
-                            <th>DEALER ID</th>
-                            <th>DEALER NAME</th>
+                            <th>Customer ID</th>
+                            <th>Customer L.Name</th>
                             <th>BUDGET</th>
                             <th>G CLICKS</th>
                             <th>G LEADS</th>
