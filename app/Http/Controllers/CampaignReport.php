@@ -98,18 +98,18 @@ AND fg.spend > 0 AND DATE_FORMAT(fg.date,'%Y-%m-%d') BETWEEN '" . $start_date . 
 
 FROM  (
 # SQL Query for google
-SELECT gc.date, adsacc.customer_id AS customers, gc.spend AS amount 
-FROM ads_accounts adsacc
+#SELECT gc.date, adsacc.customer_id AS customers, gc.spend AS amount 
+#FROM ads_accounts adsacc
 
-INNER JOIN google_campaigns c ON c.ad_account_id = adsacc.ad_account_id #OK
-INNER JOIN google_campaigns_reports gc ON gc.campaign_id = c.id
+#INNER JOIN google_campaigns c ON c.ad_account_id = adsacc.ad_account_id #OK
+#INNER JOIN google_campaigns_reports gc ON gc.campaign_id = c.id
 
-WHERE adsacc.ad_service = 'adwords' AND adsacc.is_active = 1
+#WHERE adsacc.ad_service = 'adwords' AND adsacc.is_active = 1
 
-AND gc.spend > 0 AND DATE_FORMAT(gc.date,'%Y-%m-%d') BETWEEN DATE_SUB(DATE_FORMAT(NOW() ,'%Y-%m-01'), interval 11 month) AND DATE_FORMAT(NOW() ,'%Y-%m-%d')
+#AND gc.spend > 0 AND DATE_FORMAT(gc.date,'%Y-%m-%d') BETWEEN DATE_SUB(DATE_FORMAT(NOW() ,'%Y-%m-01'), interval 11 month) AND DATE_FORMAT(NOW() ,'%Y-%m-%d')
 
 
-UNION ALL
+#UNION ALL
 
 # SQL Query for Facebook
 SELECT fg.date, adsacc.customer_id AS customers, fg.spend AS amount 
@@ -147,6 +147,24 @@ AND fg.spend > 0 AND DATE_FORMAT(fg.date,'%Y-%m-%d') BETWEEN DATE_SUB(DATE_FORMA
                         'page_description',
                         'stats',
                         'monthly_performance'
+        ));
+    }
+
+    public function allActiveCustomers(Request $request) {
+
+        $page_title = '';
+        $page_description = '';
+        $table = '';
+
+        $start_date = $request->get('date_start') ?? date("Y-m-d", strtotime("last week monday"));
+        $end_date = $request->get('date_end') ?? date("Y-m-d", strtotime("last sunday"));
+
+        return view('reports.all-active-customers', compact(
+                        'page_title',
+                        'page_description',
+                        'start_date',
+                        'end_date',
+                        'table'
         ));
     }
     

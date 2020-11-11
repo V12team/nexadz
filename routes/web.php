@@ -30,6 +30,7 @@ Route::post('/create-new-compaign', 'FacebookCampaign@saveCompaign');
 Route::get('/all-performance', 'CampaignReport@index');
 Route::get('/weekly-performance', 'CampaignReport@weeklyPerformance');
 Route::get('/monthly-performance', 'CampaignReport@monthlyPerformance');
+Route::get('/all-active-customers', 'CampaignReport@allActiveCustomers');
 
 
 

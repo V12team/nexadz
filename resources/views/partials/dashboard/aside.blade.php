@@ -46,6 +46,11 @@
                         <span class="menu-text">Monthly Performance</span>
                     </a>
                 </li>
+                <li class="menu-item {{ Request::is('*/all-active-customers') ? 'menu-item-active' : '' }}" aria-haspopup="true">
+                    <a href="{{ url('/all-active-customers') }}" class="menu-link">
+                        <span class="menu-text">All Active Customers</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
